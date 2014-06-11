@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="description" content="dodolan manuk responsive catalog themes built with twitter bootstrap">
+    <meta name="keywords" content="responsive, catalog, cart, themes, twitter bootstrap, bootstrap">
+    <meta name="author" content="afriq yasin ramadhan">
+    <meta name="google-site-verification" content="S7ZPb5Ap_mAb7S_N9sozntq6ZG4B2uRQ_-HZZB6R_VM" />
+    <%= favicon_link_tag 'mangofavicon5.ico' %>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]
+	-->
+	<title>Mango, Advertise To the World</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  </head>
+
+  <body>
+	<%= render "layouts/navbar" %>
+	<%= yield %>
+	
+	<%= render "layouts/footer" %>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

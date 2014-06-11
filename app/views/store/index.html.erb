@@ -1,0 +1,36 @@
+<!-- begin:heading -->
+	<div class="heads" style="background: url(img/img02.jpg) center center;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2><span></span> about us</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:heading -->
+	<!-- begin:content -->
+	<div class="page-content">
+		<div class="container">
+			<div class="row padd20-top-btm">
+				<div class = "col-md-12 text-center">
+					<% if notice %>
+					<p id="notice"><%= notice %></p>
+					<% end %>
+					<h3>Make a Purchase</h3>
+					<% @products.each do |product| %>
+						<div class="entry">
+							<h3><%=product.title %></h3>
+							<%= sanitize(product.description) %>
+							<div class="price_line">
+								<span class="price"><%= number_to_currency(product.price) %></span>
+								<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+							</div>
+						</div>
+					<% end %>
+					<%= render @cart %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:content -->
