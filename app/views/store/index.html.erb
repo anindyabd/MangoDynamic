@@ -18,17 +18,21 @@
 					<p id="notice"><%= notice %></p>
 					<% end %>
 					<h3>Make a Purchase</h3>
-					<% @products.each do |product| %>
-						<div class="entry">
-							<h3><%=product.title %></h3>
-							<%= sanitize(product.description) %>
-							<div class="price_line">
-								<span class="price"><%= number_to_currency(product.price) %></span>
-								<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
-							</div>
+					<div class="row padd20-top-btm">
+						<div class="col-md-6 col-sm-4">
+							<% @products.each do |product| %>
+								<h3><%=product.title %></h3>
+								<%= sanitize(product.description) %>
+								<div class="price_line">
+									<span class="price"><%= number_to_currency(product.price) %></span>
+									<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+								</div>
+							<% end %>	
+						</div>  
+						<div class="col-md-6 col-sm-4">
+							<%= render @cart %>
 						</div>
-					<% end %>
-					<%= render @cart %>
+					</div>
 				</div>
 			</div>
 		</div>
