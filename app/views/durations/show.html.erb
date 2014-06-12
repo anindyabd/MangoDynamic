@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @duration.title %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @duration.length %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @duration.rate %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @duration.discount %>
+</p>
+
+<%= link_to 'Edit', edit_duration_path(@duration) %> |
+<%= link_to 'Back', durations_path %>
