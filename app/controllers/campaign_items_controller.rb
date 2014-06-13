@@ -10,6 +10,7 @@ class CampaignItemsController < ApplicationController
   # GET /campaign_items/1
   # GET /campaign_items/1.json
   def show
+    @campaign_item=Campaign_item.find(parmas[:id])
   end
 
   # GET /campaign_items/new
