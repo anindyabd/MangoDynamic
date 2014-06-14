@@ -39,14 +39,7 @@
 							<% end %>
 							<div class="row padd20-top-btm">
 								<h3> Select Campaign Length </h3>
-								<div class = "demo">
 								
-								<% form_for @duration do |f| %>
-									<%= f.collection_select :duration, Duration.all, :id, :name %>
-									<%= f.submit 'Submit', campaign_items_path(duration_id: duration) %>
-								<% end %>
-							
-							</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-4">
