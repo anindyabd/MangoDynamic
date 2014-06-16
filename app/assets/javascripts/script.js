@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	
+	/*
 	// Contact Maps
 	$("#maps").gmap3({
 		map: {
@@ -19,6 +20,7 @@ $(document).ready(function() {
 			}
 		 }
 	});
+*/
 	
 	//Slider
 	$("#slider").carousel({

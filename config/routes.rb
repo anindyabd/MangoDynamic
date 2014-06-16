@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   match '/purchase', to: 'purchases#purchase', via:'get'
   match '/store', to: 'store#index', via:'get'
 
+
 end
