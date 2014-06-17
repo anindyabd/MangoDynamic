@@ -22,15 +22,15 @@ module MangoAttempt
     config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => "consultmango.com",
-      :user_name            => "eric@consultmango.com",
-      :password             => "fiji1848",
+      :domain               => ENV["GMAIL_DOMAIN"],
+      :user_name            => ENV["GMAIL_USERNAME"],
+      :password             => ENV["GMAIL_PASSWORD"],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
 
     config.action_mailer.default_url_options = {
-      :host => "consultmango.com"
+      :host => ENV["GMAIL_DOMAIN"]
     }
   end
 end
