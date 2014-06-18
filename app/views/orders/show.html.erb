@@ -1,0 +1,42 @@
+<!-- begin:heading -->
+  <div class="heads" style="background: url(img/img02.jpg) center center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><span></span> make a purchase</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end:heading -->
+<div class = "container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @order.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @order.email %>
+  </p>
+
+  <p>
+    <strong>College:</strong>
+    <%= @order.college_name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= @order.address %>
+  </p>
+
+  <p>
+    <strong>Plan type:</strong>
+    <%= @order.plan_type %>
+  </p>
+
+  <%= link_to 'Edit', edit_order_path(@order) %> |
+  <%= link_to 'Back', orders_path %>
+</div>
