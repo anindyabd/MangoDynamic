@@ -1,0 +1,1109 @@
+/* line 5, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 9, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 14, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_image {
+  width: 60px;
+  height: 70px;
+}
+/* line 19, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_description {
+  width: 60%;
+}
+/* line 22, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_description dl {
+  margin: 0;
+}
+/* line 26, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 32, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_description dd {
+  margin: 0;
+}
+/* line 37, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 43, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_line_even {
+  background: #e0f8f8;
+}
+/* line 46, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/products.css.scss */
+.products .list_line_odd {
+  background: #f8b0f8;
+}
+/* line 1, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 71, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* line 76, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+/* line 80, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+/* line 86, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+/* line 90, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li.disabled > a {
+  color: #999;
+}
+
+/* line 94, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+/* line 102, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #428bca;
+}
+
+/* line 106, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+/* line 112, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* line 115, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 118, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+/* line 122, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 128, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+
+/* line 133, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+/* line 140, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+/* line 144, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+
+/* line 147, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* line 151, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 156, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+
+  /* line 160, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+/* line 164, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+/* line 170, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  /* line 174, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+
+  /* line 180, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+/* line 184, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-pills > li {
+  float: left;
+}
+
+/* line 187, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+
+/* line 190, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+/* line 195, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/* line 199, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-stacked > li {
+  float: none;
+}
+
+/* line 202, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+/* line 206, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-justified {
+  width: 100%;
+}
+
+/* line 209, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-justified > li {
+  float: none;
+}
+
+/* line 212, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* line 216, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 221, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+
+  /* line 225, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+/* line 229, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+/* line 232, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+/* line 238, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  /* line 242, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+
+  /* line 248, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+/* line 252, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.tab-content > .tab-pane {
+  display: none;
+}
+
+/* line 255, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.tab-content > .active {
+  display: block;
+}
+
+/* line 258, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 263, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width: 768px) {
+  /* line 270, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 275, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-header {
+    float: left;
+  }
+}
+/* line 279, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-collapse {
+  max-height: 340px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* line 288, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 292, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+
+  /* line 297, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  /* line 303, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+
+  /* line 308, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* line 316, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  /* line 324, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* line 329, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+  /* line 334, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-static-top {
+    border-radius: 0;
+  }
+}
+/* line 339, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  /* line 347, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+/* line 351, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+/* line 355, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+/* line 360, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 368, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  /* line 373, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+/* line 377, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* line 389, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-toggle:focus {
+  outline: none;
+}
+
+/* line 392, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+/* line 398, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  /* line 402, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-toggle {
+    display: none;
+  }
+}
+/* line 406, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+/* line 409, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  /* line 415, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  /* line 425, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+
+  /* line 428, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+
+  /* line 432, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 437, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  /* line 441, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav > li {
+    float: left;
+  }
+
+  /* line 444, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* line 448, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 453, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-left {
+    float: left !important;
+  }
+
+  /* line 456, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-right {
+    float: right !important;
+  }
+}
+/* line 460, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-form {
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  /* line 472, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  /* line 477, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  /* line 482, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .input-group > .form-control {
+    width: 100%;
+  }
+
+  /* line 485, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  /* line 490, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .radio,
+  .navbar-form .checkbox {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  /* line 498, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .radio input[type="radio"],
+  .navbar-form .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 502, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 507, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form .form-group {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 512, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 522, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-form.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+/* line 526, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 531, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 535, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 539, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-btn.btn-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 543, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-btn.btn-xs {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+/* line 547, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 552, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-text {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  /* line 557, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-text.navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+/* line 561, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+/* line 565, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+/* line 569, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+/* line 573, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-text {
+  color: #777;
+}
+
+/* line 576, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+
+/* line 580, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+
+/* line 586, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+/* line 592, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+/* line 596, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+/* line 600, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+
+/* line 603, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+/* line 607, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+
+/* line 612, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+  /* line 617, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+
+  /* line 621, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+
+  /* line 627, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+
+  /* line 633, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+/* line 638, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-link {
+  color: #777;
+}
+
+/* line 641, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+
+/* line 644, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+
+/* line 648, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-brand {
+  color: #999;
+}
+
+/* line 652, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* line 656, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-text {
+  color: #999;
+}
+
+/* line 659, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #999;
+}
+
+/* line 663, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* line 669, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+
+/* line 675, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+
+/* line 679, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+
+/* line 683, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+
+/* line 686, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 690, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+
+/* line 695, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+
+@media (max-width: 767px) {
+  /* line 700, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+
+  /* line 703, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+
+  /* line 706, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #999;
+  }
+
+  /* line 710, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  /* line 716, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+
+  /* line 722, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+}
+/* line 727, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-link {
+  color: #999;
+}
+
+/* line 730, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/scaffolds.css.scss */
+.navbar-inverse .navbar-link:hover {
+  color: #fff;
+}
+/* line 4, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store {
+  /* An entry in the store catalog */
+}
+/* line 5, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150% sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
+}
+/* line 14, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+  min-height: 100px;
+}
+/* line 20, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store .entry img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+/* line 27, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store .entry h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #227;
+}
+/* line 36, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store .entry p, .store .entry div.price_line {
+  margin-left: 100px;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+/* line 42, /Users/ericsMac/Documents/RailsProjects/mango_attempt/app/assets/stylesheets/store.css.scss */
+.store .entry .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 3em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
