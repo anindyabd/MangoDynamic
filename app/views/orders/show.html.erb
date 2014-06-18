@@ -1,14 +1,4 @@
-<!-- begin:heading -->
-  <div class="heads" style="background: url(img/img02.jpg) center center;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2><span></span> make a purchase</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end:heading -->
+<% provide(:title, 'Completed Order') %>
 <div class = "container">
   <p id="notice"><%= notice %></p>
 
@@ -23,6 +13,11 @@
   </p>
 
   <p>
+    <strong>Phone Number:</strong>
+    <%= @order.phone_number %>
+  </p>
+
+  <p>
     <strong>College:</strong>
     <%= @order.college_name %>
   </p>
@@ -30,6 +25,16 @@
   <p>
     <strong>Address:</strong>
     <%= @order.address %>
+  </p>
+
+  <p>
+    <strong>State:</strong>
+    <%= @order.state %>
+  </p>  
+
+  <p>
+    <strong>Zipcode:</strong>
+    <%= @order.zip_code %>
   </p>
 
   <p>

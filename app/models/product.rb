@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  description :text
+#  price       :decimal(10, 2)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 class Product < ActiveRecord::Base
 	has_many :line_items
 	before_destroy :ensure_not_referenced_by_any_line_item

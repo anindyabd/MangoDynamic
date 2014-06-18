@@ -12,12 +12,7 @@
     <%= favicon_link_tag 'mangofavicon5.ico' %>
  
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]
-	-->
+  <%= render 'layouts/shim' %>
 	<title>Mango, Advertise To the World</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -25,14 +20,21 @@
   </head>
 
   <body>
-	<%= render "layouts/navbar" %>
-  <!-- alerts not necessary for devise (my opinion)
-  <p class = "notice"><%= notice %></p>
-  <p class = "alert"><%= alert %></p>
-	-->
-  <%= yield %>
-	
-	<%= render "layouts/footer" %>
+  	<%= render "layouts/navbar" %>
+
+    <% if current_page?(root_path) %>
+      <%= render 'layouts/home_header' %>
+    <% else %>
+      <%= render 'layouts/header' %>
+    <% end %>
+
+    <!-- alerts not necessary for devise (my opinion)
+    <p class = "notice"><%= notice %></p>
+    <p class = "alert"><%= alert %></p>
+  	-->
+    <%= yield %>
+  	
+  	<%= render "layouts/footer" %>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

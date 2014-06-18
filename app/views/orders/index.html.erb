@@ -5,8 +5,11 @@
     <tr>
       <th>Name</th>
       <th>Email</th>
+      <th>Phone Number</th>
       <th>College</th>
-      <th>Address</th>
+      <th>Street Address</th>
+      <th>State</th>
+      <th>Zipcode</th>
       <th>Plan type</th>
       <th colspan="3"></th>
     </tr>
@@ -17,8 +20,11 @@
       <tr>
         <td><%= order.name %></td>
         <td><%= order.email %></td>
+        <td><%= order.phone_number %></td>
         <td><%= order.college_name %></td>
         <td><%= order.address %></td>
+        <td><%= order.state %></td>
+        <td><%= order.zip_code %></td>
         <td><%= order.plan_type %></td>
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>

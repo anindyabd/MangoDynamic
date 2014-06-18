@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: durations
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)
+#  length     :integer
+#  rate       :decimal(, )
+#  discount   :float
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class Duration < ActiveRecord::Base
 	has_one :campaign_item
 

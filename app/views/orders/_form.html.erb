@@ -2,11 +2,15 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :email %>
-    <%= f.input :college_name %>
-    <%= f.input :address %>
-    <%= f.input :plan_type %>
+    <%= f.input :name, size: 40 %>
+    <%= f.input :email, size: 40 %>
+    <%= f.input :phone_number %>
+    <%= f.input :college_name, size: 100 %>
+    <%= f.input :address, rows: 3, cols: 40 %>
+    <%= f.input :state %>
+    <%= f.input :zip_code, size: 20 %>
+    <%= f.label :plan_type %>
+    <%= f.select :plan_type, Order::CAMPAIGN_TYPES, prompt: 'Select a campaign length' %>
   </div>
 
   <div class="form-actions">

@@ -48,6 +48,7 @@ gem 'devise', '3.2.4'
 gem 'simple_form'
 gem 'foreman', '~> 0.71.0' 
 gem 'unicorn', '~> 4.8.3'
+gem 'annotate', '~> 2.6.5'
 
 group :production do
 	gem 'pg', '0.15.1'

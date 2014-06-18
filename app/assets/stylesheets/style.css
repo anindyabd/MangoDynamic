@@ -1,19 +1,5 @@
 /*
 	========================================
-	Dodolan Manuk - Catalog Themes
-	========================================
-	
-	@author			: Afriq Yasin Ramadhan
-	@version		: v1.1
-	@date-create	: 6/1/2013
-	@last-update	: 2/28/2014
-	@file-name		: style
-
-*/
-
-
-/*
-	========================================
 	TABLE OF CONTENT
 	========================================
 	
@@ -851,6 +837,9 @@ blockquote {
 	text-align: center;
 	color: #444444;
 }
+.static-header{
+  background: url(../img/img02.jpg) center center;
+  }
 
 #featured{
 	padding: 40px 0;
@@ -2429,3 +2418,4 @@ blockquote {
 		height: 345px;
 	}
 }
+
