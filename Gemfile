@@ -47,11 +47,11 @@ gem 'font-awesome-rails'
 gem 'devise', '3.2.4'
 gem 'simple_form'
 gem 'foreman', '~> 0.71.0' 
+gem 'unicorn', '~> 4.8.3'
 
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'
-	gem 'thin'
 end
 
 ruby "2.1.1"
