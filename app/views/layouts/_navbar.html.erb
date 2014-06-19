@@ -22,9 +22,7 @@
         <li><%= link_to "home", root_path %></li>
         <li><%= link_to "about", about_path %></li>
         <li><%= link_to "team", team_path %></li>
-        <li class="dropdown">
-          <a href="contact.html">Contact</a>
-        </li>
+        <li ><%= link_to "contact", contactus_path %></li>
       </ul>
       <ul class="nav navbar-nav nav-right">
         <% if user_signed_in? %>

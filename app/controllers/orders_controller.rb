@@ -33,6 +33,8 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
+        Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
@@ -50,6 +52,7 @@ class OrdersController < ApplicationController
         format.html { redirect_to @order, notice: 'Order was successfully updated.' }
         format.json { render :show, status: :ok, location: @order }
       else
+        @cart = current_cart
         format.html { render :edit }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end

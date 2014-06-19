@@ -1,0 +1,37 @@
+<% provide(:title, "Contact Us") %>
+<div class="page-content">
+  <div class="container">
+    <div class="row padd20-top-btm">
+      <div class = "col-md-4 col-sm-4">
+        <h3>How to reach us</h3>
+        <p>Please use the contact form on the right side if you have any questions or requests concerning our services.</p>
+        <br><p> We will respond to your message within 48 hours.</p>
+      </div>
+      <div class = "col-md-4 col-sm-4">
+        <div align="center"> <h3>General</h3></div>
+        <p>1621 Euclid Avenue</p>
+        <p>Suite-2150</p>
+        <p>Cleveland, Ohio 44106 </p>
+        <p><strong>Tel:</strong> 860-462-9445 or 440-391-3421</p>
+        <p><strong>Email:</strong> admin@consultmango.com</p>
+      </div>
+      <div class = "col-md-4 col-sm-4">
+        <div align="right">
+          <h3>Send A message to Us</h3>
+          <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+            <%= f.input :name, :required => true %>
+            <%= f.input :email, :required => true %>
+            <%= f.input :message, :as => :text, :required => true %>
+            <div class= "hidden">
+              <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+            <div>
+              </br>
+              <%= f.button :submit, 'Send message', :class=> "btn btn-primary btn-warning" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

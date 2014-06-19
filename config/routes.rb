@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :orders
-
+  resources "contacts", only: [:new, :create]
   devise_for :users
   resources :campaign_items
   resources :durations
@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   match '/team',  to: 'static_pages#team',  via:'get'
   match '/purchase', to: 'purchases#purchase', via:'get'
   match '/store', to: 'store#index', via:'get'
-
+  match '/contactus', to: 'contacts#new', via: 'get'
 
 end
