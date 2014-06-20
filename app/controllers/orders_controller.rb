@@ -10,6 +10,15 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @order = Order.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = InvoicePdf.new(@order, view_context)
+        send_data pdf.render, filename: "invoice_#{@order.created_at.strftime("%d/%m/%Y")}.pdf", 
+                              type: "application/pdf", disposition: 'inline'
+      end
+    end
   end
 
   # GET /orders/new
@@ -30,7 +39,7 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(order_params)
-
+    @order.add_line_items_from_cart(current_cart)
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])

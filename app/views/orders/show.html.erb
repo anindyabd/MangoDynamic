@@ -43,5 +43,5 @@
   </p>
 
   <%= link_to 'Edit', edit_order_path(@order) %> |
-  <%= link_to 'Receive Invoice', root_path %>
+  <%= link_to 'Receive Invoice', order_path(@order, :format => 'pdf') %>
 </div>
