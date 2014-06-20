@@ -46,10 +46,16 @@ gem 'bcrypt-ruby', '3.1.5'
 gem 'font-awesome-rails'
 gem 'devise', '3.2.4'
 gem 'simple_form'
+#for deployment to heroku, not in production because wanted to test locally first
 gem 'foreman', '~> 0.71.0' 
 gem 'unicorn', '~> 4.8.3'
+#annotate forms
 gem 'annotate', '~> 2.6.5'
+#send mail
 gem 'mail_form', '~> 1.5.0'
+#generate pdf
+gem 'prawn', '~> 1.0.0' 
+#gem 'activeadmin', '~> 0.6.3'
 
 group :production do
 	gem 'pg', '0.15.1'
