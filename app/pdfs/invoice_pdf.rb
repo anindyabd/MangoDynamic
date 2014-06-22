@@ -8,6 +8,7 @@ class InvoicePdf < Prawn::Document
 		bill_to
 		move_down 20
 		text_content
+		pricing
 		footer
 	end
 
@@ -52,10 +53,10 @@ class InvoicePdf < Prawn::Document
 
  	def footer
  		y_position = cursor
- 		bounding_box([75, y_position-50], :width => 770, :height => 400) do
-      		pad_top(20) { text "If you have any questions about this invoice, please contact:" }
+ 		bounding_box([0, y_position-50], :width => 500, :height => 400, :align => :center) do
+      		pad_top(20) { text "If you have any questions about this invoice, please contact:", :align => :center }
       		pad_bottom(1) { text "Eric Vennaro: 860-462-9445, eric@consultmango.com", :size => 9, :align => :center }
-      		pad_bottom(1) { text "Kevin Wang: 440-391-3421, kevin@consultmango.com", size: 9 }
+      		pad_bottom(1) { text "Kevin Wang: 440-391-3421, kevin@consultmango.com", size: 9, :align => :center }
       		pad_top(10) { text "Thank you", size: 15, style: :italic, :align => :center }
 
     	end

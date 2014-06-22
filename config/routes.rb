@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   match '/store', to: 'store#index', via:'get'
   match '/contactus', to: 'contacts#new', via: 'get'
 
+
 end

@@ -3,50 +3,50 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				
 				<h2>The most effective way to advertise your College brand in China</h2>
 				<p> Mango is elegant and easy to use.  Our web platform helps you post sponsored ads and create
 					content on international social media.</p>
 			</div>
 		</div>
 		<div class="row">
-				<div class="col-md-12">
-					<div class="heading-title">
-						<h3>Colleges can advertise on:</h3>
-					</div>
+			<div class="col-md-12">
+				<div class="heading-title">
+					<h3>Colleges can advertise on:</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="featured-container">
-						<div class="featured-photos">
-							<img src="img/Sina_Weibo.png" alt="Sina Weibo Logo">
-						</div>
-						<!-- <h3>Weibo</h3> -->
-						<p><br>Weibo, <strong> the Chinese equivalent of Twitter </strong> has roughly 60.2 million active users.  Through Weibo Mango will create custom (mandarin) pages about your college.</p>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div class="featured-container">
+					<div class="featured-photos">
+						<img src="img/Sina_Weibo.png" alt="Sina Weibo Logo">
 					</div>
+					<!-- <h3>Weibo</h3> -->
+					<p><br>Weibo, <strong> the Chinese equivalent of Twitter </strong> has roughly 60.2 million active users.  Through Weibo Mango will create custom (mandarin) pages about your college.</p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="featured-container">
-						<div class="featured-photos">
-							<img src="img/Renren.png" alt="Renren Logo">
-						</div>
-						<!-- <h3>Renren</h3> -->
-						<p><br> Renren, <strong> the Chinese equivalent of Facebook </strong>, had 210 million unique log-in last may and through Renren Mango create mandarin pages in order to promote your colleges brand to millions. </p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="featured-container">
+					<div class="featured-photos">
+						<img src="img/Renren.png" alt="Renren Logo">
 					</div>
+					<!-- <h3>Renren</h3> -->
+					<p><br> Renren, <strong> the Chinese equivalent of Facebook </strong>, had 210 million unique log-in last may and through Renren Mango create mandarin pages in order to promote your colleges brand to millions. </p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="featured-container">
-						<div class="featured-photos">
-							<img src="img/Baidu.png" alt="Baidu Logo">
-						</div>
-						<!-- <h3>Baidu</h3> -->
-						<p><br>Baidu is the <strong> Chinese equivalent to Google </strong> and by posting sponsored ads on Baidu
-							Mango can guarantee that your College will be on of the top five results.</p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="featured-container">
+					<div class="featured-photos">
+						<img src="img/Baidu.png" alt="Baidu Logo">
 					</div>
+					<!-- <h3>Baidu</h3> -->
+					<p><br>Baidu is the <strong> Chinese equivalent to Google </strong> and by posting sponsored ads on Baidu
+						Mango can guarantee that your College will be on of the top five results.</p>
 				</div>
+			</div>
+		</div>
+		<a name = "services"> </a>
 	</div>
-	<a name = "services"> </a>
 </div>
 <!-- end:tagline -->
 
@@ -77,10 +77,41 @@
 		          </ul>
 		        </div>
 			</div>
+
+			<div class="col-md-12">
+				<div class="heading-title">
+					<h2>Get noticed by an International Audience</h2>
+					<p>With advanced features, you'll fall in love with. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div class="blog-container">
+					<%= image_tag("flat-feature-icon-1.png", alt: "Ico 1") %>
+					<h3>Custom Analytics</h3>
+					<p>Browse and analyze detailed statistics of your advertising campaigns.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="blog-container">
+					<%= image_tag("flat-feature-icon-2.png", alt: "Ico 2") %>
+					<h3>Fast Turnover</h3>
+					<p>Launch your advertising campaign instantly. We'll help you get the job done.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="blog-container">
+					<%= image_tag("flat-feature-icon-3.png", alt: "Ico 3") %>
+					<h3>Highly Affordable</a></h3>
+					<p>We know you're on a tight budget. You'll never over pay. We promise.</p>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </div>
-<!-- end:featured -->
+<!-- end:blog -->
 
 <!-- begin:pricing -->
 <div class="page-content contact">
@@ -107,6 +138,9 @@
 	              <li>
 	              	Includes a Weibo page with customized information and two to three unique posts per day.  In addition to the pages, advertisements, linking back to the informational pages, will be run in order to gain exposure for your pages. 
 	              </li>
+	              <li class = "foot">
+	              	<%= link_to "Make A Purchase", store_path, class: "btn btn-warning" %>
+	              </li>
 	            </ul>
 	        </div>
 			<div id = "p2" class="col-md-3 col-sm-6 col-xs-12 pricing-table">
@@ -114,6 +148,9 @@
 	              <li class="head">Renren</li>
 	              <li class="price"> $10,000 <p>For Three Months</p><p></p></li>
 	              <li>Includes a Renren page with customized information and two to three unique posts per day.In addition to the pages, advertisements, linking back to the informational pages, will be run in order to gain exposure for your pages.</li>
+	              <li class = "foot">
+	              	<%= link_to "Make A Purchase", store_path, class: "btn btn-warning" %>
+	              </li>
 	            </ul>
 	        </div>
 			<div id = "p3" class="col-md-3 col-sm-6 col-xs-12 pricing-table">
@@ -121,6 +158,9 @@
 	              <li class="head">Baidu</li>
 	              <li class="price"> $8,000 <p>For Three Months</p><p></p></li>
 	              <li>Includes posting sponsored ads and banner ads on Baidu that link back to content posted on Renren, Weibo, youku, or customized landing pages. </li>
+	              <li class = "foot">
+	              	<%= link_to "Make A Purchase", store_path, class: "btn btn-warning" %>
+	              </li>
 	            </ul>
 	        </div>	
 	       	<div id = "p4" class="col-md-3 col-sm-6 col-xs-12 pricing-table">
@@ -131,12 +171,15 @@
 	              	   Video hosted on Youku: $800<br>
 	              	   Extra web page: $500 (per page)
 	              </li>
+	              <li class = "foot">
+	              	<%= link_to "Make A Purchase", store_path, class: "btn btn-warning" %>
+	              </li>
 	            </ul>
 	      	</div> 
 		</div>
 		<!-- end price boxes -->
 		<div class="foot">
-			<%= link_to "Make A Purchase", store_path, class: "btn btn-warning btn-larges" %>
+			
 		</div>
 
 		<!-- add to cart, contains .erb -->
@@ -200,42 +243,3 @@
 	</div>
 </div>
 <!-- end:testimoni -->
-
-<!-- begin: Services -->
-<div id="blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="heading-title">
-					<h2>Get noticed by an International Audience</h2>
-					<p>With advanced features, you'll fall in love with. </p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<div class="blog-container">
-					<%= image_tag("flat-feature-icon-1.png", alt: "Ico 1") %>
-					<h3>Custom Analytics</h3>
-					<p>Browse and analyze detailed statistics of your advertising campaigns.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<div class="blog-container">
-					<%= image_tag("flat-feature-icon-2.png", alt: "Ico 2") %>
-					<h3>Fast Turnover</h3>
-					<p>Launch your advertising campaign instantly. We'll help you get the job done.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<div class="blog-container">
-					<%= image_tag("flat-feature-icon-3.png", alt: "Ico 3") %>
-					<h3>Highly Affordable</a></h3>
-					<p>We know you're on a tight budget. You'll never over pay. We promise.</p>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</div>
-<!-- end:blog -->

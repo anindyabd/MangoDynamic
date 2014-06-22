@@ -1668,7 +1668,7 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -5868,6 +5868,7 @@ button.close {
   margin-left:auto;
   margin-right:auto;
   width:70%;
+  padding-left: 60px;
 }
 .slides ul {
     list-style:none;
@@ -6048,4 +6049,22 @@ button.close {
 .checkout-form{
   color: #000;
 } 
+
+.mail-header{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-paddingEV{
+  padding-top: 20px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-left: 40px;
+}
+.pd-top{
+  padding-top: 20px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
