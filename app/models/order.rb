@@ -20,11 +20,17 @@ class Order < ActiveRecord::Base
 	validates :name, :email, :college_name, :address, :plan_type, :phone_number, :state, :zip_code, presence: true
 	CAMPAIGN_TYPES= ["Three Months", "Six Months", "Nine Months"]
 	validates :plan_type, inclusion: CAMPAIGN_TYPES
-	
+	#before_save :calculate_total
+
 	def add_line_items_from_cart(cart)
 		cart.line_items.each do |item|
 			item.cart_id = nil
 			line_items << item
 		end
 	end
+
+	def calculate_total(cart)
+		self.total_price = cart.line_items.to_a.sum { |item| item.total_price }
+	end
+
 end

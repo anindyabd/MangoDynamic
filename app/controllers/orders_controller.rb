@@ -40,6 +40,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(current_cart)
+    @order.calculate_total(current_cart)
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
