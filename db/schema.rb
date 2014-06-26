@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623155410) do
+ActiveRecord::Schema.define(version: 20140625210915) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 20140623155410) do
     t.string   "state",        null: false
     t.string   "zip_code",     null: false
     t.decimal  "total_price"
+    t.string   "city"
   end
 
   create_table "products", force: true do |t|

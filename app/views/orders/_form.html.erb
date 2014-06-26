@@ -7,7 +7,8 @@
     <%= f.input :phone_number %>
     <%= f.input :college_name, size: 100 %>
     <%= f.input :address, rows: 3, cols: 40 %>
-    <%= f.input :state %>
+    <%= f.input :state%>
+    <%= f.input :city %>
     <%= f.input :zip_code, size: 20 %>
     <%= f.label :plan_type %>
     <%= f.select :plan_type, Order::CAMPAIGN_TYPES, prompt: 'Select a campaign length' %>
