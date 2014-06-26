@@ -25,6 +25,7 @@
 	[20. PRICING]
 	[21. FOOTER]
 	[22. COPYRIGHT]
+	[23. EXTRA STYLES -- if there's no section for it look here!]
 
 */
 
@@ -2559,4 +2560,12 @@ float: right;
 h2 {
 	font-weight: 500;
 	font-size: 35px;
+}
+
+.signup {
+    margin-left: 10%;
+}
+
+.signin {
+	margin-left: 10%;
 }
