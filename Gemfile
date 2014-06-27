@@ -56,10 +56,7 @@ gem 'mail_form', '~> 1.5.0'
 #generate pdf
 gem 'prawn', '~> 1.0.0' 
 #gem 'activeadmin', '~> 0.6.3'
-#integrates mailchimp
-gem 'gibbon', '~> 1.1.3'
-#mailchimp api, gibbon wouldn't work
-gem 'mailchimp-api', require: 'mailchimp'
+
 
 group :production do
 	gem 'pg', '0.15.1'

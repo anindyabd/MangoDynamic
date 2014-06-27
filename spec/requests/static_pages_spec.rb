@@ -7,7 +7,7 @@ describe "Static Pages" do
     it "should have the content 'Sample Advertisments'" do
       
       visit root_path
-      expect(page).to have_content('Mango is elegant')
+      expect(page).to have_content('Sample Advertisements')
     end
   end
 
