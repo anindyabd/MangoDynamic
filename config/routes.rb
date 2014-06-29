@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   match '/team',  to: 'static_pages#team',  via:'get'
   match '/purchase', to: 'purchases#purchase', via:'get'
   match '/store', to: 'store#index', via:'get'
-  match '/contactus', to: 'contacts#new', via: 'get'
+  match '/contacts', to: 'contacts#new', via: 'get'
 
 
 end
