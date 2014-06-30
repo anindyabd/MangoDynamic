@@ -1,26 +1,23 @@
 require 'spec_helper'
 
 describe "orders/edit" do
-  before(:each) do
-    @order = assign(:order, stub_model(Order,
-      :name => "MyString",
-      :email => "MyString",
-      :college => "MyString",
-      :address => "MyText",
-      :plan_type => "MyString"
-    ))
-  end
+  context "with 1 order" do
+    before(:each) do
+      @order = assign(:order, stub_model(Order,
+        :name => "Eminem",
+        :email => "eminem@slimshady.com",
+        :college => "Not Cranbrook",
+        :address => "8 Mile",
+        :plan_type => "Three Months"
+      ))
+    end
 
-  it "renders the edit order form" do
-    render
+    it "renders the edit order form" do
+      render
 
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form[action=?][method=?]", order_path(@order), "post" do
-      assert_select "input#order_name[name=?]", "order[name]"
-      assert_select "input#order_email[name=?]", "order[email]"
-      assert_select "input#order_college[name=?]", "order[college]"
-      assert_select "textarea#order_address[name=?]", "order[address]"
-      assert_select "input#order_plan_type[name=?]", "order[plan_type]"
+      rendered.should have_content("Name")
+      rendered.should have_content("Email")
+
     end
   end
 end
