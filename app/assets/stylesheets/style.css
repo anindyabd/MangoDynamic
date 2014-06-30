@@ -2180,7 +2180,7 @@ blockquote {
 .pricing-table ul > li{
 	padding:10px 10px;
     margin:0;
-    font-size:13px;
+    font-size:17px;
 	color: #5c7280;
 }
 
@@ -2398,6 +2398,10 @@ blockquote {
 	color: #ffffff;
 }
 
+#footer .sitemap > ul > li > a:hover{
+	background-color: #F39C12;
+} 
+
 
 /* 
 	==================
@@ -2568,4 +2572,8 @@ h2 {
 
 .signin {
 	margin-left: 10%;
+}
+
+#purchase_button {
+	text-align: center;
 }

@@ -1,20 +1,28 @@
-<%= simple_form_for(@order) do |f| %>
-  <%= f.error_notification %>
+<div class="container">
+  <div class="row">
+  <%= simple_form_for(@order) do |f| %>
+    <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :name, size: 40 %>
-    <%= f.input :email, size: 40 %>
-    <%= f.input :phone_number %>
-    <%= f.input :college_name, size: 100 %>
-    <%= f.input :address, rows: 3, cols: 40 %>
-    <%= f.input :state%>
-    <%= f.input :city %>
-    <%= f.input :zip_code, size: 20 %>
-    <%= f.label :plan_type %>
-    <%= f.select :plan_type, Order::CAMPAIGN_TYPES, prompt: 'Select a campaign length' %>
+    <div class="form-inputs col-md-4">
+      <%= f.input :name, size: 40 %>
+      <%= f.input :email, size: 40 %>
+      <%= f.input :phone_number %>
+      <%= f.input :college_name, size: 100 %>
+    </div>
+    <div class="form-inputs col-md-4">
+      <%= f.input :address, rows: 3, cols: 40 %>
+      <%= f.input :state%>
+      <%= f.input :city %>
+      <%= f.input :zip_code, size: 20 %>
+      <%= f.label :plan_type %>
+      <%= f.select :plan_type, Order::CAMPAIGN_TYPES, prompt: 'Select a campaign length' %>
+      <div class="form-actions">
+        <%= f.button :submit %>
+      </div>
+    
+    </div>
+    
+    
+  <% end %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>
