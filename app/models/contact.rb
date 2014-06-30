@@ -9,7 +9,7 @@ class Contact < MailForm::Base
 	def headers
 	{ 
 		:subject => "Consult Mango Contact Us Question",
-		:to => 'eric@consultmango.com',
+		:to => ENV['GMAIL_USERNAME'],
 		:from => %("#{name}"<#{email})
 	}
 	end

@@ -59,4 +59,13 @@ describe "Authentication" do
 			fill_in "Password confirmation", 	with: user.password
 			click_button "Sign in"
 		end
+	 	it { should_not have_selector('a', text: 'Sign up')}
+            it { should_not have_selector('a', text: 'Sign in')}
+            it { should have_selector('a', text: 'Profile') }
+            it { should have_selector('a', text: 'Sign Out') }
+            it { should have_selector('div.flash_notice', text: "Signed in successfully.") }
+        end
+
+        it { should have_content('Sign in') }
+    end
 end
