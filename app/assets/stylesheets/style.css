@@ -2593,4 +2593,11 @@ h2 {
     -o-transform: none;
     transform: none;
 }
+
+#products ul{
+	height: 300px;
+}
+
+
+
 }
