@@ -45,6 +45,7 @@
 	[2. GLOBAL STYLE]
 	==================
 */
+
 body{
 	background: #fff;
 	margin: 0;
@@ -2226,7 +2227,7 @@ blockquote {
     margin-right: 0px !important;
 	color:#5c7280;
 	text-align:center;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	-o-transition: color 0.2s ease-in-out;
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
@@ -2600,4 +2601,6 @@ h2 {
 
 
 
+.pad-top{
+	padding-top: 20px;
 }
