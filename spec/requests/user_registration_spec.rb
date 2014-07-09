@@ -12,7 +12,7 @@ describe "Authentication" do
 
 			click_button "Sign up"
 
-			page.should have_content('Sample Advertisements')
+			expect(page).to have_content('Sample Advertisements')
 		end
 	end
 
@@ -46,11 +46,6 @@ describe "Authentication" do
 
 	describe "Sign in page" do
 		before { visit new_user_session_path }
-		describe "with invalid information" do
-			before { click_button "Sign in" }
-			it { should have_content('Sign in') }
-			#it { should have_selector('div.flash_alert', text: "Invalid") }
-		end
 
 		let(:user) { FactoryGirl.create(:user) }
 		before do

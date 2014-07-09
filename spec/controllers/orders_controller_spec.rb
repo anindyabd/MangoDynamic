@@ -23,7 +23,15 @@ describe OrdersController do
   # This should return the minimal set of attributes required to create a valid
   # Order. As you add validations to Order, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "name" => "MyString" } }
+  let(:valid_attributes) { { "name" => "MyString", 
+                             "email" => "nelly@gmail.com", 
+                             "college_name" => "Grillz",
+                             "address" => "111 Somewhere",
+                             "state" => "Missouri",
+                             "city" => "St. Louis",
+                             "plan_type" => "Three Months",
+                             "phone_number" => "216-341-9945",
+                             "zip_code" => "06033" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
