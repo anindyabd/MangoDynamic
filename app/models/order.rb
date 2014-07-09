@@ -17,6 +17,7 @@
 
 class Order < ActiveRecord::Base
 	has_many :line_items, dependent: :destroy
+	belongs_to :user
 
 	CAMPAIGN_TYPES= ["Three Months", "Six Months", "Nine Months"]
 	STATES = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", 

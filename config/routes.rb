@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :analytics_by_weeks
+
   resources :orders
   resources "contacts", only: [:new, :create]
   devise_for :users
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
   match '/store', to: 'store#index', via:'get'
   match '/contacts', to: 'contacts#new', via: 'get'
   match '/contacts', to: 'contacts#create', via: 'post'
+  match '/profile', to: 'profiles#index', via: 'get'
 
 
 end

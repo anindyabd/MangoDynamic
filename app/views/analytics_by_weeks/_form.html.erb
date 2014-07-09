@@ -1,0 +1,15 @@
+<%= simple_form_for(@analytics_by_week) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :week %>
+    <%= f.input :weibo_followers %>
+    <%= f.input :email_signups %>
+    <%= f.input :seo_rank %>
+    <%= f.input :weibo_clicks %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

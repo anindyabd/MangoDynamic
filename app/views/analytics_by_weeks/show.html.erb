@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @analytics_by_week.week %>
+</p>
+
+<p>
+  <strong>Weibo followers:</strong>
+  <%= @analytics_by_week.weibo_followers %>
+</p>
+
+<p>
+  <strong>Email signups:</strong>
+  <%= @analytics_by_week.email_signups %>
+</p>
+
+<p>
+  <strong>Seo rank:</strong>
+  <%= @analytics_by_week.seo_rank %>
+</p>
+
+<p>
+  <strong>Weibo clicks:</strong>
+  <%= @analytics_by_week.weibo_clicks %>
+</p>
+
+<%= link_to 'Edit', edit_analytics_by_week_path(@analytics_by_week) %> |
+<%= link_to 'Back', analytics_by_weeks_path %>

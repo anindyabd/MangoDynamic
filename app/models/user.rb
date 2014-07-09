@@ -22,5 +22,12 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  
+  has_many :orders, dependent: :destroy #will destroy orders associated with user if user profile is destroyed
+  has_one :profile, dependent: :destroy #a user can only have one profile
+
+  after_create :create_child
+
+  def create_child
+  	Profile.create("user_id" => id)
+  end
 end
