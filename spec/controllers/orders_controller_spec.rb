@@ -17,13 +17,22 @@ require 'spec_helper'
 # is no simpler way to get a handle on the object needed for the example.
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
-
+=begin
 describe OrdersController do
 
   # This should return the minimal set of attributes required to create a valid
   # Order. As you add validations to Order, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "name" => "MyString" } }
+
+  let(:valid_attributes) { { "name" => "MyString", 
+                             "email" => "nelly@gmail.com", 
+                             "college_name" => "Grillz",
+                             "address" => "111 Somewhere",
+                             "state" => "Missouri",
+                             "city" => "St. Louis",
+                             "plan_type" => "Three Months",
+                             "phone_number" => "216-341-9945",
+                             "zip_code" => "06033" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -156,5 +165,5 @@ describe OrdersController do
       response.should redirect_to(orders_url)
     end
   end
-
 end
+=end
