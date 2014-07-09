@@ -532,7 +532,7 @@ blockquote {
 
 #home-slider .item {
 	padding:80px 0px 30px;
-	height:520px;
+	min-height:520px;
 	overflow:hidden;
 	-webkit-background-size:cover !important;
 	-moz-background-size:cover !important;
