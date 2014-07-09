@@ -1,34 +1,34 @@
 <% provide(:title, 'Make a purchase') %>
-	<div class="featured">
-	<br>
-		<div class="container">
-			<div class="row">
-				<% @products.each do |product| %>
-				    <div id = "products" class="col-md-4 col-sm-6 text-center pricing-table">
-				    	<ul class="list-unstyled">
-						<h3><%=product.title %></h3>
-							<p class="wordwrap"><%= sanitize(product.description) %></p>
-						<div class="price_line">
-							<span class="price"><%= number_to_currency(product.price) %></span>
-							<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true, class: "btn btn-warning addCartButton" %>
-						</div>
-						</ul>
+<div class="featured">
+<br>
+	<div class="container">
+		<div class="row">
+			<% @products.each do |product| %>
+			    <div id = "products" class="col-md-4 col-sm-6 text-center pricing-table">
+			    	<ul class="list-unstyled">
+					<h3><%=product.title %></h3>
+						<p class="wordwrap"><%= sanitize(product.description) %></p>
+					<div class="price_line">
+						<span class="price"><%= number_to_currency(product.price) %></span>
+						<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true, class: "btn btn-warning addCartButton" %>
 					</div>
-				<% end %>			
-			</div>
-			<br>
-			<div class = "row">
-				<div id = "cart">
-					
-						<% if @cart %>
-							<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
-						 	<%= render @cart %> 
-						 	<% end %> 
-						<% end %>
-					
+					</ul>
 				</div>
+			<% end %>			
+		</div>
+		<br>
+		<div class = "row">
+			<div id = "cart">
+				
+					<% if @cart %>
+						<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %> 
+					 	<%= render @cart %> 
+					 	<% end %> 
+					<% end %>
+				
 			</div>
 		</div>
 	</div>
+</div>
 
 	<!-- end:content -->
