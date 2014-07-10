@@ -17,3 +17,4 @@
 ~/config/application.rb
 /.env
 /app/assets/stylesheets/bootstrap.css.map
+.DS_Store
