@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
-  
+  before_action :set_profile, only: [:show, :edit, :update, :destroy]
+
   before_filter :authenticate_user!
 
   # GET /profiles
@@ -12,11 +13,12 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @profile = Profile.find(params[:id])
+    @analytics = @profile.analytics_by_weeks
   end
 
   # GET /profiles/new
   def new
-   # @profile = Profile.new
+    @profile = Profile.new
   end
 
   # GET /profiles/1/edit
@@ -45,5 +47,15 @@ class ProfilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+   def set_profile
+      @profile = Product.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def profile_params
+      params.require(:profile).permit(:user_id)
+    end
 
 end

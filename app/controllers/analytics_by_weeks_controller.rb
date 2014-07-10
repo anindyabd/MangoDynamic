@@ -4,12 +4,13 @@ class AnalyticsByWeeksController < ApplicationController
   # GET /analytics_by_weeks
   # GET /analytics_by_weeks.json
   def index
-    @analytics_by_weeks = AnalyticsByWeek.all
+    @analytics_by_weeks = AnalyticsByWeek.where(profile_id: current_user.profile.id)
   end
 
   # GET /analytics_by_weeks/1
   # GET /analytics_by_weeks/1.json
   def show
+    @analytics_by_week = AnalyticsByWeek.find(params[:id])
   end
 
   # GET /analytics_by_weeks/new
@@ -25,7 +26,8 @@ class AnalyticsByWeeksController < ApplicationController
   # POST /analytics_by_weeks.json
   def create
     @analytics_by_week = AnalyticsByWeek.new(analytics_by_week_params)
-
+    @analytics_by_week.profile_id = current_user.profile.id
+    @analytics_by_week.user_id = current_user.id
     respond_to do |format|
       if @analytics_by_week.save
         format.html { redirect_to @analytics_by_week, notice: 'Analytics by week was successfully created.' }
@@ -69,6 +71,6 @@ class AnalyticsByWeeksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def analytics_by_week_params
-      params.require(:analytics_by_week).permit(:week, :weibo_followers, :email_signups, :seo_rank, :weibo_clicks)
+      params.require(:analytics_by_week).permit(:week, :weibo_followers, :email_signups, :seo_rank, :weibo_clicks, :profile_id)
     end
 end

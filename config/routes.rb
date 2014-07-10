@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :analytics_by_weeks
 
   resources :orders
   resources "contacts", only: [:new, :create]
@@ -11,6 +10,9 @@ Rails.application.routes.draw do
   resources :carts
   get 'store/index'
   resources :products
+  resources :profiles do
+    resources :analytics_by_weeks
+  end
 
   root 'static_pages#home'
   match '/about', to: 'static_pages#about', via:'get'
@@ -19,7 +21,5 @@ Rails.application.routes.draw do
   match '/store', to: 'store#index', via:'get'
   match '/contacts', to: 'contacts#new', via: 'get'
   match '/contacts', to: 'contacts#create', via: 'post'
-  match '/profile', to: 'profiles#index', via: 'get'
-
 
 end
