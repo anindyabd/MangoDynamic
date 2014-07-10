@@ -87,6 +87,7 @@ a:hover{
 	background: #eaeaea;
 }
 
+/*
 .btn.btn-primary {
     background-color: #2980b9; 
     border-color: #2980b9;
@@ -175,7 +176,7 @@ a:hover{
 .btn.btn-inverse:active, .btn.btn-inverse.active{
 	background-color: #4e6d8d;
     border-color: #4e6d8d;
-}
+} */
 
 input,
 button,
@@ -223,6 +224,25 @@ blockquote {
 	color: #666666;
 }
 
+.bg-white-overlay{
+	background:rgba(255,255,255,0.9);
+}
+
+.bg-orange{
+	background:#F39C12;
+}
+
+.bg-white{
+	background:#fff;
+}
+
+.txt-orange{
+	color:#F39C12;
+}
+
+.txt-white{
+	color:#fff;
+}
 
 /*
 	==============
@@ -1008,29 +1028,17 @@ blockquote {
 	==================
 */
 #testimoni{
-	width: 100%;
-	background: url(../img/img02.jpg) no-repeat center center transparent;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale')";
-	background-size:cover !important;
-	-webkit-background-size:cover !important;
-	-moz-background-size:cover !important;
-	-ms-background-size:cover !important;
-	-o-background-size:cover !important;
-	_background-size:cover;
-	*background-size:cover;
 	padding: 80px 0;
-	text-align: center;
 }
 
-#testimoni .testimoni-icon i {
+#testimoni .testimoni-icon span {
 	font-size: 22px;
 	width: 55px;
 	height: 55px;
 	color: #ffffff;
 	display: inline-block;
 	padding: 17px;
-	background: #F1C40F;
+	background: #F39C12;
 	border-radius: 50%;
 	-o-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -1042,16 +1050,13 @@ blockquote {
 }
 
 #testimoni h3 {
-	font-size: 26px;
-	line-height: 30px;
 	font-weight: 600;
-	/*text-transform: uppercase */
 	text-align: center;
-	color: #ffffff;
-	letter-spacing: -1px;
-	margin: 15px 0;
+	color: #F39C12;
+	margin: 15px;
 }
 
+/*
 #testimoni .carousel-control {
 	height: 36px;
 	width: 36px;
@@ -1091,24 +1096,23 @@ blockquote {
 #testimoni .carousel .item{
 	text-shadow: 1px 0px #666;
 }
-
-#testimoni .carousel .item .testimoni-item{
-	color: #ffffff;
+*/
+.testimoni-item{
+	color: #000;
 	display: block;
-	box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
-	-o-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
-	-moz-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
-	-webkit-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
-	padding: 40px 0;
-	font-size: 14px;
 }
 
-#testimoni .carousel .item h4{
-	color: #ffffff;
+.testimoni-item p{
+	font-size: 14px;
+	margin:40px 20px 10px;
+}
+
+.testimoni-item h4{
 	font-weight: 600;
 	font-style: italic;
 	font-size: 15px;
 	text-transform: capitalize;
+	margin:0 0 40px 20px;
 }
 
 
@@ -2127,11 +2131,9 @@ blockquote {
 	==================
 */
 #footer{
-	background: #F1C40F;
 	width: 100%;
 	padding: 30px 0;
 	text-align: center;
-	color: #ffffff;
 	float: left;
 }
 
@@ -2233,11 +2235,13 @@ blockquote {
 	/*text-transform: uppercase; */
 	padding: 5px 10px;
 	font-size: 14px;
-	color: #ffffff;
+	color: #333;
+	outline:none;
 }
 
 #footer .sitemap > ul > li > a:hover{
 	background-color: #F39C12;
+	color:#fff;
 } 
 
 
