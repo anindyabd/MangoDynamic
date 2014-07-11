@@ -13,7 +13,9 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @profile = Profile.find(params[:id])
-    @analytics = @profile.analytics_by_weeks
+   @analytics_by_weeks = @profile.analytics_by_weeks.all
+   @orders = current_user.orders.limit(5)
+
   end
 
   # GET /profiles/new

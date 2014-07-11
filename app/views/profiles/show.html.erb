@@ -4,11 +4,49 @@
 	<div class="container">
 		<div class="row padd20-top-btm">
 			<div class="col-md-8 col-sm-8">
-				<h3> Hello <%= current_user.email %> </h3>
-						
+				<h2> Hello <%= current_user.email %> </h2>
+				<h3> Analytics For Your Order </h3>
+				<table>
+					<% @analytics_by_weeks.each do |a| %>
+					<tr>
+						<td class = "list_description">
+							<dl>
+								<dd> <%= a.week %> </dd>
+								<dd> <%= a.weibo_followers %> </dd>
+								<dd> <%= a.email_signups %> </dd>
+								<dd> <%= a.seo_rank %> </dd>
+								<dd> <%= a.weibo_clicks %> </dd>
+							</dl>
+						</td>
+					</tr>
+				<% end %>
+				</table>	
 			</div>
 		</div>
 		<div class="row padd20-top-btm">
+			<h3> View Your Past Orders </h3>
+				<% if @orders.any? %>
+					<table> 
+						<thead>
+							<tr>
+								<th> Date Purchased </th>
+								<th> Name On Order </th>
+								<th> Email On Order </th>
+								<th> Order Amount </th>
+							</tr>
+						</thead>
+						<% @orders.each do |o| %>
+							<tr>
+								<td> <%= o.created_at.strftime("%d %b %y")  %> </td>
+								<td> <%= o.name %> </td>
+								<td> <%= o.email %> </td>
+								<td> <%= number_to_currency(o.total_price) %> </td>
+							</tr>
+					<% end %>
+				</table>
+				<% else %>
+					<p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
+			<% end %>
 		</div>
 		<dif class="row">
 		</div>

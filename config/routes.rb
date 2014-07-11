@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   resources :carts
   get 'store/index'
   resources :products
-  resources :profiles do
-    resources :analytics_by_weeks
-  end
+  resources :profiles
+  resources :analytics_by_weeks
+  
 
   root 'static_pages#home'
   match '/about', to: 'static_pages#about', via:'get'
