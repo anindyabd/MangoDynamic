@@ -27,14 +27,10 @@
       <ul class="nav navbar-nav nav-right">
         <% if user_signed_in? %>
           <!--<l1> Logged in as <strong><%= current_user.email %></strong> </li> -->
-<<<<<<< HEAD
           <% if current_user.profile != nil %>
-            <li> <%= link_to 'View Dashboard', profile_path(current_user.profile.id) %>
+            <li> <%= link_to 'Dashboard', profile_path(current_user.profile.id) %>
           <% end %>
-          
-=======
           <li> <%= link_to "Blog", posts_path %></li>
->>>>>>> 99507da2f6a63c1dd5e4a6d9a56b7b8e5ab9fb0f
           <li> <%= link_to 'Edit profile', edit_user_registration_path %> </li>
           <li> <%= link_to "sign out", destroy_user_session_path, method: :delete %> </li>
         <% else %>
