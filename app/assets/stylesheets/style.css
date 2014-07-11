@@ -2,7 +2,7 @@
 	========================================
 	TABLE OF CONTENT
 	========================================
-	
+
 	[1. IMPORT FONTS]
 	[2. GLOBAL STYLE]
 	[3. NAVBAR]
@@ -40,7 +40,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 
 
-/* 
+/*
 	==================
 	[2. GLOBAL STYLE]
 	==================
@@ -66,16 +66,16 @@ a:hover{
 	padding: 20px 0;
 }
 
-::-moz-selection { 
-	background: #F1C40F; 
-	color: #fff; 
-	text-shadow: none; 
+::-moz-selection {
+	background: #F1C40F;
+	color: #fff;
+	text-shadow: none;
 }
 
-::selection { 
-	background: #F1C40F; 
-	color: #fff; 
-	text-shadow: none; 
+::selection {
+	background: #F1C40F;
+	color: #fff;
+	text-shadow: none;
 }
 
 .breadcrumb {
@@ -88,17 +88,17 @@ a:hover{
 }
 
 .btn.btn-primary {
-    background-color: #2980b9; 
+    background-color: #2980b9;
     border-color: #2980b9;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:focus {
-    background-color: #3498DB; 
+    background-color: #3498DB;
     border-color: #3498DB;
 }
-    
+
 .btn.btn-primary:active, .btn.btn-primary.active {
-    background-color: #3498DB; 
+    background-color: #3498DB;
     border-color: #3498DB;
 }
 
@@ -106,29 +106,29 @@ a:hover{
     background-color: #3498db;
     border-color: #3498db;
 }
-    
+
 .btn.btn-info:hover, .btn.btn-info:focus {
     background-color: #5dade2;
     border-color: #5dade2;
 }
-    
+
 .btn.btn-info:active, .btn.btn-info.active {
-    background-color: #2383c4; 
+    background-color: #2383c4;
     border-color: #2383c4;
 }
 
 .btn.btn-danger {
     background-color: #e74c3c;
-    border-color: #e74c3c; 
+    border-color: #e74c3c;
 }
 
 .btn.btn-danger:hover, .btn.btn-danger:focus {
-    background-color: #ec7063; 
+    background-color: #ec7063;
     border-color: #ec7063;
 }
 
 .btn.btn-danger:active, .btn.btn-danger.active {
-    background-color: #dc2d1b; 
+    background-color: #dc2d1b;
     border-color: #dc2d1b;
 }
 
@@ -141,17 +141,17 @@ a:hover{
     background-color: #55d98d;
     border-color: #55d98d;
 }
-   
+
 .btn.btn-success:active, .btn.btn-success.active {
-    background-color: #27ad60; 
+    background-color: #27ad60;
     border-color: #27ad60;
 }
-  
+
 .btn.btn-warning {
     background-color: #FFA032;
     border-color: #f1c40f;
 }
-    
+
 .btn.btn-warning:hover, .btn.btn-warning:focus {
     background-color: #FFB157;
     border-color: #FFB157;
@@ -208,7 +208,7 @@ input[type="color"]:focus,
 	background: rgba(255, 255, 255, 0.7);
 	outline: 0;
 	outline: thin dotted \9;
-	color: #F1C40F;
+	color: black;
 	-webkit-box-shadow: none;
 	 -moz-box-shadow: none;
 		  box-shadow: none;
@@ -424,7 +424,7 @@ blockquote {
 	font-weight: 700;
 	/*text-transform: uppercase */
 	font-size: 14px;
-	
+
 }
 
 .dropdown-menu > li > a:hover,
@@ -438,7 +438,7 @@ blockquote {
 	text-decoration: none;
 	background: #F1C40F;
 	font-weight: 600;
-  
+
 }
 
 .dropdown-menu > .active > a,
@@ -505,7 +505,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[4. SLIDER]
 	==================
@@ -720,7 +720,7 @@ blockquote {
 	font-weight: 700;
 	font-size: 90px;
 	line-height: 95px;
-	text-transform: uppercase 
+	text-transform: uppercase
 	display: block;
 }
 
@@ -800,7 +800,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[5. TAGLINE]
 	==================
@@ -822,7 +822,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[6. FEATURED]
 	==================
@@ -898,7 +898,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[7. CATALOG]
 	==================
@@ -1002,7 +1002,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[8. TESTOMONIAL]
 	==================
@@ -1095,9 +1095,9 @@ blockquote {
 #testimoni .carousel .item .testimoni-item{
 	color: #ffffff;
 	display: block;
-	box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
-	-o-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
-	-moz-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff; 
+	box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
+	-o-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
+	-moz-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
 	-webkit-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
 	padding: 40px 0;
 	font-size: 14px;
@@ -1112,7 +1112,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[9. BLOG]
 	==================
@@ -1319,7 +1319,7 @@ blockquote {
 	display: block;
 	font-weight: 400;
 	line-height: 16px;
-	
+
 }
 
 .blog .the-calendar > .the-comments{
@@ -1330,7 +1330,7 @@ blockquote {
 	border-top: 1px dotted #ffffff;
 	margin: 3px 0;
 	padding: 2px 0 0;
-	
+
 }
 
 .blog .the-calendar > .the-comments i{
@@ -1354,7 +1354,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[10. COMMENT]
 	==================
@@ -1460,7 +1460,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[11. BLOG SIDEBAR]
 	==================
@@ -1567,7 +1567,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[12. HEAD SINGLE]
 	==================
@@ -1602,7 +1602,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[13. PAGE CONTENT]
 	==================
@@ -1622,7 +1622,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[14. PAGINATION]
 	==================
@@ -1659,7 +1659,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[15. ITEM SINGLE]
 	==================
@@ -1862,7 +1862,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[16. SIDEBAR ITEM]
 	==================
@@ -1938,7 +1938,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[17. TEAM]
 	==================
@@ -1984,7 +1984,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[18. CONTACT]
 	==================
@@ -2006,7 +2006,7 @@ blockquote {
 	resize: none;
 	background: #eaeaea;
 	-webkit-box-shadow: 0 0 1px 2px #eaeaea;
-     -moz-box-shadow: 0 0 1px 2px #eaeaea; 
+     -moz-box-shadow: 0 0 1px 2px #eaeaea;
           box-shadow: 0 0 1px 2px #eaeaea;
 	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -2025,7 +2025,7 @@ blockquote {
 .confirm input[type="email"]:focus,
 .confirm textarea:focus{
 	color: #F1C40F;
-	-webkit-box-shadow: 0 0 1px 2px #F1C40F !important; 
+	-webkit-box-shadow: 0 0 1px 2px #F1C40F !important;
      -moz-box-shadow: 0 0 1px 2px #F1C40F !important;
           box-shadow: 0 0 1px 2px #F1C40F !important;
 	outline: none;
@@ -2066,7 +2066,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[19. TESTIMONI]
 	==================
@@ -2085,8 +2085,8 @@ blockquote {
 }
 
 .testimoni .thumbnails .thumbnail p:before{
-	position: relative; 
-    font-size: 20px; 
+	position: relative;
+    font-size: 20px;
 	content: "\f10d";
 	font-family: 'Open Sans';
 	top: -10px;
@@ -2095,8 +2095,8 @@ blockquote {
 }
 
 .testimoni .thumbnails .thumbnail p:after{
-	position: relative; 
-    font-size: 20px; 
+	position: relative;
+    font-size: 20px;
 	content: "\f10e";
 	font-family: 'Open Sans';
 	bottom: -10px;
@@ -2284,7 +2284,7 @@ blockquote {
 }
 
 
-/* 
+/*
 	==================
 	[21. FOOTER]
 	==================
@@ -2401,10 +2401,10 @@ blockquote {
 
 #footer .sitemap > ul > li > a:hover{
 	background-color: #F39C12;
-} 
+}
 
 
-/* 
+/*
 	==================
 	[22. COPYRIGHT]
 	==================
@@ -2426,12 +2426,12 @@ blockquote {
 	}
 }
 /* mailchimp */
-    
+
    /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 #mc_embed_signup form {
-	display:block; 
-	position:relative; 
-	text-align:left; 
+	display:block;
+	position:relative;
+	text-align:left;
 	padding:10px 0 10px 3%;
 	width: 100%;
 }
@@ -2444,21 +2444,22 @@ position: relative;
 }
 
 #mc-embedded-subscribe-form {
-float: left;
+ float: left;
 }
 
 #mc-embedded-subscribe {
-float: right;
+    float: right;
 }
 #mc_embed_signup h2 {
-	font-weight:bold; 
-	padding:0; 
-	margin:15px 0; 
+	font-weight:bold;
+	padding:0;
+	margin:15px 0;
 	font-size:1.4em;
 }
 #mc_embed_signup input {
-	border:1px solid #999; 
+	border:1px solid #999;
 	-webkit-appearance:none;
+	color: black;
 }
 #mc_embed_signup input[type=checkbox]{
 	-webkit-appearance:checkbox;
@@ -2468,25 +2469,26 @@ float: right;
 }
 #mc_embed_signup input:focus {
 	border-color:#333;
+	color: black;
 }
 #mc_embed_signup .button {
-	clear:both; 
-	background-color: #FFB157; 
-	border: 0 none; 
-	border-radius:4px; 
-	color: #FFFFFF; 
-	cursor: pointer; 
-	display: inline-block; 
-	font-size:15px; 
-	font-weight: bold; 
-	height: 35px; 
-	line-height: 32px; 
-	margin: 0px -75px 10px 0; 
-	padding:0; 
-	text-align: center; 
-	text-decoration: none; 
-	vertical-align: top; 
-	white-space: nowrap; 
+	clear:both;
+	background-color: #FFB157;
+	border: 0 none;
+	border-radius:4px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size:15px;
+	font-weight: bold;
+	height: 35px;
+	line-height: 32px;
+	margin: 0px -75px 10px 0;
+	padding:0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
 	width: auto;
 	font-weight: normal;
 }
@@ -2496,69 +2498,68 @@ float: right;
 }
 #mc_embed_signup .nowrap {
 	white-space:nowrap;
-}     
+}
 #mc_embed_signup .clear {
-	clear: none; 
+	clear: none;
 	display: inline;
 }
 
 #mc_embed_signup label {
-	display:block; 
-	font-size:16px; 
-	padding-bottom:10px; 
+	display:block;
+	font-size:16px;
+	padding-bottom:10px;
 	font-weight:bold;
 }
 #mc_embed_signup input.email {
-	display:block; 
-	padding:3px 0; 
-	margin:0 4% 10px 0; 
-	text-indent:5px; 
-	width:80%; 
-	min-width:130px;
+	display:block;
+	padding:3px 0;
+	margin:0 4% 10px 0;
+	text-indent:5px;
+	min-width:150px;
+	color: black;
 
 }
 #mc_embed_signup input.button {
-	display:block; 
-	width:37%; 
+	display:block;
 	min-width:90px;
 }
 
 #mc_embed_signup div#mce-responses {
-	float:left; 
-	top:-1.4em; 
-	padding:0em .5em 0em .5em; 
-	overflow:hidden; 
+	float:left;
+	top:-1.4em;
+	padding:0em .5em 0em .5em;
+	overflow:hidden;
 	width:90%;
-	margin: 0 5%; 
+	margin: 0 5%;
 	clear: both;
 }
 #mc_embed_signup div.response {
-	margin:1em 0; 
-	padding:1em .5em .5em 0; 
-	font-weight:bold; 
-	float:left; 
-	top:-1.5em; 
-	z-index:1; 
+	margin:1em 0;
+	padding:1em .5em .5em 0;
+	font-weight:bold;
+	float:left;
+	top:-1.5em;
+	z-index:1;
 	width:80%;
 }
 #mc_embed_signup #mce-error-response {
 	display:none;
 }
 #mc_embed_signup #mce-success-response {
-	color:#529214; 
+	color:#529214;
 	display:none;
 }
 #mc_embed_signup label.error {
-	display:block; 
-	float:none; 
-	width:auto; 
-	margin-left:1.05em; 
-	text-align:left; 
+	display:block;
+	float:none;
+	width:auto;
+	margin-left:1.05em;
+	text-align:left;
 	padding:.5em 0;
 }
 
 /* --------------
-   EXTRA STYLES  
+   EXTRA STYLES
    --------------
 */
 
@@ -2592,12 +2593,12 @@ h2 {
 	text-align: center;
 }
 
-.wordwrap { 
+.wordwrap {
    text-align: center;
-   white-space: pre-wrap;      /* CSS3 */   
-   white-space: -moz-pre-wrap; /* Firefox */    
-   white-space: -pre-wrap;     /* Opera <7 */   
-   white-space: -o-pre-wrap;   /* Opera 7 */    
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
    word-wrap: break-word;      /* IE */
 }
 
@@ -2616,4 +2617,17 @@ h2 {
 
 .pad-top{
 	padding-top: 20px;
+}
+
+#mc_embed_signup .about-button {
+	float: none;
+	margin: 0px -75px 10px 300px;
+}
+
+#mc_embed_signup input.about-email {
+	min-width: 270px;
+}
+
+input {
+	color: black;
 }

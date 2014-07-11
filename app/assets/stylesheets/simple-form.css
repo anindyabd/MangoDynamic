@@ -7,10 +7,10 @@
 
 .simple_form label {
   float: left;
-  width: 100px;
+  /* width: 100px; */
   text-align: right;
   margin-top: 2px;
-  margin-right: 20%;
+  /* margin-right: 20%; */
 }
 
 div.boolean, .simple_form input[type='submit'] {
@@ -65,8 +65,8 @@ label.collection_check_boxes {
 }
 .special-label label{
   float: left;
-  width: 100px;
+  /*width: 100px; */
   text-align: right;
   vertical-align: center;
-  margin: 2px -20px;
+  /* margin: 2px -20px; */
 }
