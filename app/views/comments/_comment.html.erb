@@ -1,0 +1,5 @@
+<div class="row single-comment">
+	<p class="comment-author"><%= comment.author %></p>
+	<p class="comment-content"><%= comment.content %></p>
+	<p class="comment-date"><%= "Posted on ".concat(comment.created_at.to_formatted_s(:long)) %></p>
+</div>

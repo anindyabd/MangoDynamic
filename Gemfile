@@ -62,7 +62,8 @@ gem 'morrisjs-rails'
 gem 'raphael-rails'
 #gem 'activeadmin', '~> 0.6.3'
 
-
+#gem for social share buttons
+gem 'social-share-button'
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'
