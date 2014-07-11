@@ -57,6 +57,9 @@ gem 'annotate', '~> 2.6.5'
 gem 'mail_form', '~> 1.5.0'
 #generate pdf
 gem 'prawn', '~> 1.0.0' 
+#graphs for the analytics dashboard
+gem 'morrisjs-rails'
+gem 'raphael-rails'
 #gem 'activeadmin', '~> 0.6.3'
 
 
