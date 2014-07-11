@@ -1,0 +1,16 @@
+$('.ajax').prepend('<%= escape_javascript(render :partial => @comment) %>');
+$('#comment_content').val('');
+
+if($('.comment-number').text() === "There are 0 comments")
+{
+	$('.comment-number').text("There is 1 comment");
+}
+else
+{
+	var numCommentsInt = parseInt($('.comment-number').text().replace(/[^0-9]/g,''));
+	numCommentsInt++;
+	console.log(numCommentsInt);
+	var numCommentsString = "" + numCommentsInt;
+	console.log(numCommentsString);
+	$('.comment-number').text("There are " + numCommentsString + " comments");
+}
