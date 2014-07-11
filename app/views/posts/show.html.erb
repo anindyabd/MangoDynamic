@@ -1,0 +1,57 @@
+<% provide(:title, "Our Blog") %>
+<div class="page-content">
+  <div class="container">
+    <div class="blog">
+      <div class="row padd20-top-btm">
+      	<div class="col-md-3">
+      		<h4><%= link_to 'Back', posts_path %></h4>
+      	</div>
+      	<div class="col-md-6">
+          <div class = "post">
+            	<h2><%= link_to @post.title, post_path(@post) %></h2>
+            	<p><%= simple_format(@post.content) %></p>
+          </div>
+
+          <h4>Share us</h4><%= social_share_button_tag(@post.title) %>
+
+          <div class="comments-section">
+            <h4>Leave a Reply</h4>
+
+        		<div id="new-comment-form">
+        			<%= simple_form_for Comment.new, :remote => true  do |f| %>
+  				    <%= f.error_notification %>
+
+      				<div class="form-inputs">
+      				    <%= f.hidden_field :post_id, :value => @post.id %>
+      				    <%= f.hidden_field :author, :value => user_signed_in? ? current_user.email : "Anonymous" %>
+      				    <%= f.input :content, label: false, :placeholder => "Enter your comment here...", :input_html => {:style=> 'width: 100%; height: 60px; color: black; text-indent: 10px; padding-top: 5px'}%>
+      				</div>
+
+    				  <div class="form-actions" style='background: #FFFFFF'>
+    				    <%= f.button :submit, :style=> 'margin-left: 0px' %>
+    				  </div>
+  				    <% end %>
+        		</div>
+            <div class="row comments">
+              <% if @post.comments.count == 1 %>
+                <h3 class="comment-number">There is 1 comment</h3>
+              <% else %>
+                <h3 class="comment-number">There are <%= @post.comments.count %> comments</h3>
+              <% end %>
+            	<div class="col-md-10 col-md-offset-1 ajax">
+                <% @post.comments.order(created_at: :desc).each do |comment| %>
+                <div class="row single-comment">
+                	 <p class="comment-author"><%= comment.author %></p>
+                	 <p class="comment-content"><%= comment.content %></p>
+                   <p class="comment-date"><%= "Posted on ".concat(comment.created_at.to_formatted_s(:long)) %></p>
+                </div>
+            	<% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
