@@ -28,9 +28,7 @@
       <%= render 'layouts/header' %>
     <% end %>
 
-    <!-- alerts not necessary for devise (my opinion) -->
     <% flash.each do |type, message| %>
-      <div id="flash" class="alert fade out <%= bootstrap_class_for(type) %> fade in">
       <div class="alert <%= bootstrap_class_for(type) %> fade in" id = "disappear">
         <button class="close" data-dismiss="alert">×</button>
         <%= message %>
@@ -40,9 +38,6 @@
     <%= yield %>
   	
   	<%= render "layouts/footer" %>
-
-
-   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
