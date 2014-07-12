@@ -548,14 +548,14 @@ blockquote {
 }
 
 #home-slider .carousel-inner > .item > img,#home-slider .carousel-inner > .item > a > img {
-	display:block;
-	max-width:100%;
-	height:auto;
-	line-height:1;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	line-height: 1;
 }
 
 #home-slider .carousel-inner > .active,#home-slider .carousel-inner > .next,#home-slider .carousel-inner > .prev {
-	display:block;
+	display: block;
 }
 
 #home-slider .carousel-inner > .active {
@@ -720,7 +720,7 @@ blockquote {
 	font-weight: 700;
 	font-size: 90px;
 	line-height: 95px;
-	text-transform: uppercase
+	text-transform: uppercase;
 	display: block;
 }
 
@@ -753,12 +753,12 @@ blockquote {
 	color: #1c222b;
 	text-decoration:none;
 	opacity:0.9;
-	filter:alpha(opacity=90);
+	filter: alpha(opacity=90);
 }
 
 #home-slider .carousel-control.left,#home-slider .carousel-control.right {
 	background-image:none;
-	filter:none;
+	filter: none;
 	background:rgba(0,0,0,.2);
 	height:80px;
 	width:50px;
