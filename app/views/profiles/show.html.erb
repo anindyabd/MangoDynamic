@@ -1,6 +1,6 @@
 <!-- begin:content -->
 <% provide(:title, 'Welcome') %>
-		<div id="annual"> </div>
+		<%= content_tag :div, "", id: "click_chart", data: {clicks: chart_data} %>
 <div class="page-content">
 	<div class="container">
 		<div class="row padd20-top-btm">
@@ -24,9 +24,6 @@
 				</table>	
 			</div>
 		</div>
-
-
-
 		<div class="row padd20-top-btm">
 			<h3> View Your Past Orders </h3>
 				<% if @orders.any? %>

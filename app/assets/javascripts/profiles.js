@@ -1,10 +1,9 @@
 $(document).ready(function() {
-  Morris.Donut({
-    element: 'annual',
-    data: [
-      {label: "Download Sales", value: 12},
-      {label: "In-Store Sales", value: 30},
-      {label: "Mail-Order Sales", value: 20}
-    ]
+  Morris.Line({
+    element: 'click_chart',
+   data: $('#click_chart').data('clicks'),  
+  xkey: 'week',
+  ykeys: 'weibo_clicks',
+  labels: ['click throughs']
   });
 });
