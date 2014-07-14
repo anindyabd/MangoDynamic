@@ -18,5 +18,7 @@ $(document).ready(function() {
   	$alert.alert('close')
 }, 3000)
 
+
+
 });
 

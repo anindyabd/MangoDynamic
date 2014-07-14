@@ -1,7 +1,7 @@
 User.create!([
-  {email: "epv9@case.edu", encrypted_password: "$2a$10$JFmvRMLHlZ0rG2Ol72b6keS9xiwdqviWnqG95zDbwXItuvXo4.U92", reset_password_token: "f6ad2e6d187dde7d3c3c45edc16167cc75150672d12a13a75ce79af27809c065", reset_password_sent_at: "2014-06-28 17:15:30", remember_created_at: nil, sign_in_count: 37, current_sign_in_at: "2014-07-11 15:46:56", last_sign_in_at: "2014-07-10 13:12:49", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
-  {email: "evennaro14@jcu.edu", encrypted_password: "$2a$10$x5bkiZYoudjzIABW7eHnMufdtrw3BuW22W1DerSLZaLEhyJbUwiz6", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 10, current_sign_in_at: "2014-07-12 21:01:31", last_sign_in_at: "2014-07-12 20:24:43", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
-  {email: "epv@vennaro.com", encrypted_password: "$2a$10$WLSMESzP.olqbKNPYwl.xeYtiX6XRwufSQ/zWX1S5su3XKo476d6e", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 5, current_sign_in_at: "2014-07-11 15:55:16", last_sign_in_at: "2014-07-11 02:31:56", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
+  {email: "epv9@case.edu", password: "12345678", password_confirmation: "12345678" },
+  {email: "evennaro14@jcu.edu", password: "12345678", password_confirmation: "12345678" },
+  {email: "epv@vennaro.com", password: "12345678", password_confirmation: "12345678" }
 ])
 AnalyticsByWeek.create!([
   {week: 0, weibo_followers: 20, email_signups: 3, seo_rank: 8, weibo_clicks: 100, profile_id: 1, user_id: "2"},
