@@ -12,6 +12,7 @@ group :development do
 	gem 'guard-spork', '1.5.0'
 	gem 'childprocess', '0.3.6'
 	gem "better_errors"
+	gem 'seed_dump'
 end
 
 group :test do
