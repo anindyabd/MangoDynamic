@@ -23,5 +23,6 @@ $(document).ready(function() {
     labels: ['Weibo Clicks'],
     parseTime: false
   });
+
 });
 
