@@ -112,106 +112,305 @@
 <!-- end:blog -->
 
 <!-- begin:pricing -->
-<div class="page-content contact">
-	<div class="container-pricingEV">		
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h2 id = "honest"> Honest pricing.  No surprises.</h2>
-				<p> Our plans are available in 4 month, 8 month, and 12 month intervals. <br>
-				We provide tailored solutions to your international recruitment needs.   
-				</p>
-				<br>
-				<br>
-			</div>
 
-		</div>
 		
-	
-		<!--price boxes -->
-		<div class="row">
-			<div id = "p1" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
-	            <ul class="list-unstyled">
-	              <li class="head">Starter  </li>  
-	              <li class="sub-head"> Go ahead. Give it a try. </li> <br> 
-	              <li class="pricing-description">
-	              	We'll create Chinese social media ads for you,
-	              	put up initial ads, design an HTML page for you 
-	              	and optimize everything to get results. 
-	              		              </li>
-	            <li class="price">$125 <span class="a-week"> /week </span> </li>
-	            <li class="blank"> </li> 
-	            <li class="seo">All Service Offerings Include SEO. </li> 
-	            </ul>
-	        </div>
-			<div id = "p2" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
-	            <ul class="list-unstyled">
-	              <li class="head">Premium</li> 
-	              <li class="sub-head">Definitely the best value package. </li> <br>
-	              <li class="pricing-description">
-	              	This includes everything from the Starter as well as Weibo ads, two custom
-	              	videos, access to an analytics dashboard. It's pretty cool.
-	              </li>
-	              <li class="price"> $450 <span class="a-week"> /week </span> </li>
-	              <li class="blank"> </li>
-	              <li class="seo">All Service Offerings Include SEO. </li>
+<div class="features clearfix" id="features-tabs">
 
-	            </ul>
-	        </div>
-			<div id = "p3" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
-	            <ul class="list-unstyled">
-	              <li class="head">Gold</li> 
-	              <li class="sub-head">It's everything you'll ever need. </li> <br>  
-	              <li class="pricing-description">
-	                 Gold means you get it all. 6 videos, analytics, ads across multiple social
-	                 media channels, 5 fully loaded WeChat conversations, and more. 
+<div class="container">
+	<ul class="nav nav-tabs" role="tablist" id="features-tablist">
+		<li class="active"><a href="#features" role="tab" data-toggle="tab">Features List</a></li>
+		<li><a href="#list" role="tab" data-toggle="tab">Comparison Table</a></li>
+	</ul>
 
-	              </li>
-	              <li class="price"> $750 <span class="a-week"> /week </span> </li>
-	              <li class="blank"> </li>
-	              <li class="seo">All Service Offerings Include SEO. </li>
+<div class="tab-content">
+	<div class="tab-pane active clearfix" id="features">
 
-	            </ul>
-	        </div>	
-	       	<!-- <div id = "p4" class="col-md-3 col-sm-6 col-xs-12 pricing-table">
-	            <ul class="list-unstyled">
-	              <li class="head">Extras</li>
-	              <li class="price"> $15,000 <p> For Three Months</p><p></p></li>
-	              <li> Landing Page (three pages): $2,000<br>
-	              	   Video hosted on Youku: $800<br>
-	              	   Extra web page: $500 (per page)
-	              </li>
-	            </ul>
-	      	</div> --> 
-		</div>
+		<div class="contact">
+			<div class="col-xs-12">		
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 id = "honest"> Honest pricing.  No surprises.</h2>
+						<p> Our plans are available in 4 month, 8 month, and 12 month intervals. <br>
+						We provide tailored solutions to your international recruitment needs.   
+						</p>
+						<br>
+						<br>
+					</div>
+				</div>
 
-		<!-- end price boxes -->
-		<div class="row center pad-top" id="purchase_button">
-			<%= link_to "Why Wait? Recruit Now.", store_path, class: "btn btn-warning btn-lg" %>
-		</div>
+				<!--price boxes -->
+				<div class="row">
+					<div id = "p1" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
+			            <ul class="list-unstyled">
+			              <li class="head">Starter  </li>  
+			              <li class="sub-head"> Go ahead. Give it a try. </li> <br> 
+			              <li class="pricing-description">
+			              	We'll create Chinese social media ads for you,
+			              	put up initial ads, design an HTML page for you 
+			              	and optimize everything to get results. 
+			              		              </li>
+			            <li class="price">$125 <span class="a-week"> /week </span> </li>
+			            <li class="blank"> </li> 
+			            <li class="seo">All Service Offerings Include SEO. </li> 
+			            </ul>
+			        </div>
+					<div id = "p2" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
+			            <ul class="list-unstyled">
+			              <li class="head">Premium</li> 
+			              <li class="sub-head">Definitely the best value package. </li> <br>
+			              <li class="pricing-description">
+			              	This includes everything from the Starter as well as Weibo ads, two custom
+			              	videos, access to an analytics dashboard. It's pretty cool.
+			              </li>
+			              <li class="price"> $450 <span class="a-week"> /week </span> </li>
+			              <li class="blank"> </li>
+			              <li class="seo">All Service Offerings Include SEO. </li>
 
-		<!-- add to cart, contains .erb -->
-		
-        <!--end add to cart metrics 
-		<div class="row">
-			<div class="col-md-3 col-sm-6 col-xs-12">
-	      		<ul class="list-unstyled">
-					<li>  
-		          		<div class = "demo">		
-							<select class="wrapper-dropdown-5" name="ServicePlan">
-								<div>
-								<option value="saab" class = "select-options">3 Months</option>
-								<option value="opel" class = "select-options">6 Months</option>
-								<option value="audi" class = "select-options">9 Months</option>
-							</div>
-							</select>       
-						</div>      
-					</li>
-	        		<li class="foot"><a href="#" class="btn btn-warning btn-larges">Purchase</a></li>
-	        	</ul>
+			            </ul>
+			        </div>
+					<div id = "p3" class="col-md-4 col-sm-6 col-xs-12 pricing-table">
+			            <ul class="list-unstyled">
+			              <li class="head">Gold</li> 
+			              <li class="sub-head">It's everything you'll ever need. </li> <br>  
+			              <li class="pricing-description">
+			                 Gold means you get it all. 6 videos, analytics, ads across multiple social
+			                 media channels, 5 fully loaded WeChat conversations, and more. 
+
+			              </li>
+			              <li class="price"> $750 <span class="a-week"> /week </span> </li>
+			              <li class="blank"> </li>
+			              <li class="seo">All Service Offerings Include SEO. </li>
+
+			            </ul>
+			        </div>	
+			       	<!-- <div id = "p4" class="col-md-3 col-sm-6 col-xs-12 pricing-table">
+			            <ul class="list-unstyled">
+			              <li class="head">Extras</li>
+			              <li class="price"> $15,000 <p> For Three Months</p><p></p></li>
+			              <li> Landing Page (three pages): $2,000<br>
+			              	   Video hosted on Youku: $800<br>
+			              	   Extra web page: $500 (per page)
+			              </li>
+			            </ul>
+			      	</div> --> 
+				</div>
+
+				<!-- end price boxes -->
+				<div class="row center pad-top" id="purchase_button">
+					<%= link_to "Why Wait? Recruit Now.", store_path, class: "btn btn-warning btn-lg" %>
+				</div>
+
+				<!-- add to cart, contains .erb -->
+				
+		        <!--end add to cart metrics 
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+			      		<ul class="list-unstyled">
+							<li>  
+				          		<div class = "demo">		
+									<select class="wrapper-dropdown-5" name="ServicePlan">
+										<div>
+										<option value="saab" class = "select-options">3 Months</option>
+										<option value="opel" class = "select-options">6 Months</option>
+										<option value="audi" class = "select-options">9 Months</option>
+									</div>
+									</select>       
+								</div>      
+							</li>
+			        		<li class="foot"><a href="#" class="btn btn-warning btn-larges">Purchase</a></li>
+			        	</ul>
+					</div>
+					-->
 			</div>
-			-->
 		</div>
-	</div>
+	</div><!-- .tab-pane -->
+
+	<div class="tab-pane clearfix" id="list">
+			<table class="table table-striped features-table">
+				<thead>
+					<tr>
+						<th>
+						</th>
+						<th class="text-center">
+							<small>Starter</small>
+						</th>
+						<th class="text-center success">
+							Premium
+						</th>
+						<th class="text-center">
+							<small>Gold</small>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Weibo page
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Renren page
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Baidu sponsored ad
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Content creation on Weibo and Renren
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							HTML/CSS one pager in Mandarin
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2 custom videos in Mandarin
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Extra ad placement through Baidu
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Basic analytics dashboard
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Reply to Wechat inquiries
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Renren ad placement
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Included 4 additional custom videos in Mandarin
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Longer placed ads with through analytics
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							5 hosted Wechat conversations
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center success"><span class="glyphicon glyphicon-remove"></span>
+						</td>
+						<td class="text-center"><span class="glyphicon glyphicon-ok"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+						</td>
+						<td class="text-center success"><strong>Best Value!</strong></span>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	</div><!-- .tab-pane -->
+</div><!-- .tabs-content -->
+
+</div><!-- .container -->
+</div><!-- .features -->
+<script>
+$('#features-tablist a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+
 <!-- end:pricing -->
 	
 
