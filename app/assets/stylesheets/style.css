@@ -148,7 +148,7 @@ a:hover{
 }
 
 .btn.btn-warning {
-    background-color: #FFA032;
+    background-color: #F39C11;
     border-color: #f1c40f;
 }
 
@@ -809,17 +809,10 @@ blockquote {
 	text-align: center;
 	padding: 0px 0;
 	width: 100%;
-	background: #f5f5f5;
 	padding-top: 25px;
 	padding-bottom: 60px;
 }
 
-#tagline h2{
-	font-weight: 600;
-	/*text-transform: uppercase */
-	font-size: 24px;
-	color: #444444;
-}
 
 
 /*
@@ -833,9 +826,8 @@ blockquote {
 }
 
 .heading-title h2{
-	font-size: 35px;
+	font-size: 20 px;
 	line-height: 30px;
-	font-weight: 500;
 	/*text-transform: uppercase */
 	text-align: center;
 	color: #444444;
@@ -1610,7 +1602,7 @@ blockquote {
 .page-content{
 	padding: 0px 0;
 	width: 100%;
-	background: #ffffff;
+	background: #dadada;
 }
 
 .page-content h3{
@@ -2162,7 +2154,7 @@ blockquote {
 .pricing-table ul{
 	background:#fff;
     border:1px solid #e8e8e8;
-    text-align:center;
+    text-align:left;
     border-radius: 4px 4px 2px 2px;
     -webkit-border-radius: 4px 4px 2px 2px;
     -moz-border-radius: 4px 4px 2px 2px;
@@ -2176,13 +2168,18 @@ blockquote {
     -o-transition:-o-transform 0.5s, -o-box-shadow 0.3s;
     transition:transform 0.5s, box-shadow 0.3s;
     margin-bottom: 20px;
+   
 }
 
 .pricing-table ul > li{
-	padding:10px 10px;
+	padding-right:10px;
     margin:0;
     font-size:17px;
-	color: #5c7280;
+	color: black;
+}
+
+.pricing-table ul > li.pricing-description {
+	padding-left: 20px;
 }
 
 .pricing-table ul > li:nth-child(odd){
@@ -2190,19 +2187,19 @@ blockquote {
 }
 
 .pricing-table ul > li.head{
-    color:#F39C12;
+    color: black;
 	border: none;
-    padding-left:0!important;
-    padding-right:0!important;
-    height:25px !important;
-    text-align:center !important;
-	font-size:20px;
-	padding-top: 15px;
+	padding: 30px 0px 20px 20px !important;
+    height:40px !important;
+    text-align:left !important;
+	font-size:35px;
 	position: relative;
 	background: transparent;
+	font-family: Open Sans;
+	font-weight: 300;
 }
 
-.pricing-table ul > li.head:after{
+/* .pricing-table ul > li.head:after{
 	content: "";
 	width: 50px;
 	position: absolute;
@@ -2212,7 +2209,8 @@ blockquote {
 	display: block;
 	margin-top: 10px;
 	margin-left: -25px;
-}
+} */
+
 
 .pricing-tableEV {
 	padding-bottom: 1px;
@@ -2222,11 +2220,11 @@ blockquote {
     font-size:40px;
     font-weight:normal;
 	height:40px;
-	padding:40px 0 10px;
+	padding:40px 0 3px 20px;
     margin-left: 0px !important;
     margin-right: 0px !important;
-	color:#5c7280;
-	text-align:center;
+	color:#D95C00;
+	text-align:left;
 	margin-bottom: 40px;
 	-o-transition: color 0.2s ease-in-out;
 	-moz-transition: color 0.2s ease-in-out;
@@ -2235,8 +2233,9 @@ blockquote {
 	transition: color 0.2s ease-in-out;
 }
 
+
 .pricing-table ul:hover > li.price{
-	color:#BDC3C7;
+	color:#D95C00;
 	-o-transition: color 0.2s ease-in-out;
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
@@ -2283,14 +2282,39 @@ blockquote {
 	text-align:center;
 }
 
+#honest {
+	color: #D95C00;
+}
 
+.sub-head {
+	color: #D95C00 !important;
+	padding-left: 20px !important;
+	padding-top: 10px !important;
+}
+
+.pricing-table ul > li.price .a-week {
+	font-size: 20px;
+}
+
+.seo {
+	height: 2%;
+	width: 100%;
+	color: black;
+	text-align: center;
+}
+
+.pricing-table ul >li.blank {
+	background-color: #dadada;
+	width: 100%;
+	padding-top: 3px !important;
+}
 /*
 	==================
 	[21. FOOTER]
 	==================
 */
 #footer{
-	background: #F1C40F;
+	background: #9E9494;
 	width: 100%;
 	padding: 30px 0;
 	text-align: center;
@@ -2319,18 +2343,18 @@ blockquote {
 }
 
 #footer .social-icon > li > a{
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	background: #F39C12;
 	position: relative;
-	-o-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	border-radius: 30px;
+	-o-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	border-radius: 40px;
 	margin: 10px 5px;
 }
 
@@ -2344,7 +2368,7 @@ blockquote {
 	top: 50%;
 	margin-left: -13px;
 	margin-top: -15px;
-	color: #222222;
+	color: white;
 	-o-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -2422,7 +2446,7 @@ blockquote {
 /* custom, sets price tables to be the same size */
 @media (min-width: 1010px){
 	.pricing-table ul{
-		height: 400px;
+		height: 380px;
 	}
 }
 /* mailchimp */
@@ -2490,7 +2514,6 @@ position: relative;
 	vertical-align: top;
 	white-space: nowrap;
 	width: auto;
-	font-weight: normal;
 }
 
 #mc_embed_signup .small-meta {
@@ -2570,7 +2593,7 @@ img{
 
 h2 {
 	font-weight: 500;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .signup {
@@ -2630,4 +2653,23 @@ h2 {
 
 input {
 	color: black;
+}
+
+#slogan {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 30px; 
+	font-family: Open Sans; 
+	font-weight: 500; 
+}
+
+
+.section-title {
+	color: #D95C00;
+	font-size: 26px;
+	font-weight: 450;
+	text-align: left;
+}
+
+.section-subtitle {
+	text-align: left;
 }

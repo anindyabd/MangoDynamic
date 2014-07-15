@@ -13,12 +13,10 @@ $(document).ready(function() {
 		interval: false
 	});
 
-	var $alert = $('.alert').alert()
-	setTimeout(function () {
-  	$alert.alert('close')
-}, 3000)
-
-
+   var $alert = $('.alert').alert()
+setTimeout(function () {
+  $alert.alert('close')
+}, 5000);
 
 });
 

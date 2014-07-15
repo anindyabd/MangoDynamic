@@ -23,5 +23,6 @@ $(document).ready(function() {
     ],
     formatter: function (y, data) { return y + '%' }
   });
+
 });
 
