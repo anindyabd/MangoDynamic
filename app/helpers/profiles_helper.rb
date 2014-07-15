@@ -4,6 +4,7 @@ module ProfilesHelper
 			{
 				week: w.week,
 				weibo_clicks: w.weibo_clicks
+				
 			}
 		end
 	end

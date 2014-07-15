@@ -16,24 +16,6 @@
 						<%= content_tag :div, "", id: "click_chart3", data: {clicks: chart_data} %>
 					</div>
 				</div>
-				<!--
-				<h3> Analytics For Your Order </h3>
-				<table>
-					<% @analytics_by_weeks.each do |a| %>
-					<tr>
-						<td class = "list_description">
-							<dl>
-								<dd> <% a.week %> </dd>
-								<dd> <% a.weibo_followers %> </dd>
-								<dd> <% a.email_signups %> </dd>
-								<dd> <% a.seo_rank %> </dd>
-								<dd> <% a.weibo_clicks %> </dd>
-							</dl>
-						</td>
-					</tr>
-				<% end %>
-				</table>	
-				-->
 			</div>
 		</div>
 		<div class="row padd20-top-btm">
@@ -58,8 +40,10 @@
 					<% end %>
 				</table>
 				<% else %>
-					<p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
+					<p> You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
 			<% end %>
+			<div>
+			</div>
 		</div>
 		<dif class="row">
 		</div>
