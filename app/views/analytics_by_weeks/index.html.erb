@@ -8,6 +8,7 @@
       <th>Email signups</th>
       <th>Seo rank</th>
       <th>Weibo clicks</th>
+      <th>Baidu clicks</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= analytics_by_week.email_signups %></td>
         <td><%= analytics_by_week.seo_rank %></td>
         <td><%= analytics_by_week.weibo_clicks %></td>
+        <td><%= analytics_by_week.baidu_clicks %></td>
         <td><%= link_to 'Show', analytics_by_week %></td>
         <td><%= link_to 'Edit', edit_analytics_by_week_path(analytics_by_week) %></td>
         <td><%= link_to 'Destroy', analytics_by_week, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -71,6 +71,6 @@ class AnalyticsByWeeksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def analytics_by_week_params
-      params.require(:analytics_by_week).permit(:week, :weibo_followers, :email_signups, :seo_rank, :weibo_clicks, :profile_id)
+      params.require(:analytics_by_week).permit(:week, :weibo_followers, :email_signups, :seo_rank, :weibo_clicks, :profile_id, :baidu_clicks)
     end
 end
