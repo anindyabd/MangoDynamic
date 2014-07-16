@@ -2,7 +2,7 @@
 
 .simple_form div.input {
   margin-bottom: 10px;
-  clear: both; /* Required for Webkit, but not for Gecko */ 
+  clear: both; /* Required for Webkit, but not for Gecko */
 }
 
 .simple_form label {
@@ -11,6 +11,18 @@
   text-align: right;
   margin-top: 2px;
   /* margin-right: 20%; */
+}
+
+.simple_form .new-order {
+  text-align: right;
+}
+
+.simple_form .new-order label {
+  text-align: right;
+}
+
+.simple_form #order_plan_type {
+  margin-left: 150px;
 }
 
 div.boolean, .simple_form input[type='submit'] {

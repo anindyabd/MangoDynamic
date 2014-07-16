@@ -10,7 +10,7 @@
 	[5. TAGLINE]
 	[6. FEATURED]
 	[7. CATALOG]
-	[8. TESTOMONIAL]
+	[8. TESTIMONIAL]
 	[9. BLOG]
 	[10. COMMENT]
 	[11. BLOG SIDEBAR]
@@ -45,6 +45,11 @@
 	[2. GLOBAL STYLE]
 	==================
 */
+
+html {
+	width: 100%;
+	height: 100%;
+}
 
 body{
 	background: #fff;
@@ -230,7 +235,7 @@ blockquote {
 	==============
 */
 .navbar{
-	border-bottom: 5px solid #F1C40F;
+	border-bottom: 5px solid #d95c00;
 	margin-bottom: 0;
 	min-height: 65px;
 }
@@ -274,7 +279,7 @@ blockquote {
 	margin: -60px auto 0 -90px;
 	width: 180px;
 	height: 180px;
-	border-bottom: 5px solid #F1C40F;
+	border-bottom: 5px solid #d95c00;
 	border-radius: 100%;
 	background: #ffffff;
 	z-index: -2;
@@ -806,11 +811,23 @@ blockquote {
 	==================
 */
 #tagline{
-	text-align: center;
+	text-align: left;
 	padding: 0px 0;
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 60px;
+}
+
+#tagline .featured-container {
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tagline .featured-container .featured-photos {
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 
@@ -834,18 +851,21 @@ blockquote {
 }
 .static-header{
   background: url(../img/img02.jpg) center center;
+
   }
 
 #featured{
 	padding: 40px 0;
 	width: 100%;
 	background: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
 #featured .featured-container{
 	position: relative;
-	text-align: center;
+	text-align: left;
 }
 
 #featured .featured-container h3{
@@ -889,6 +909,43 @@ blockquote {
 	line-height: 70px;
 }
 
+.custom-ads {
+	background: url(../img/College-Ads-Vector.png);
+    background-size:contain !important;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	padding:10px 0px 30px;
+	overflow:hidden;
+	display: block;
+	min-height: 450px;
+
+}
+
+#custom-ads-box {
+	background: rgba(255,255,255, 0.83);
+	text-align: right;
+	padding-right: 50px;
+}
+
+#custom-ads-header {
+	color: #d95c00;
+	font-weight: 450;
+}
+
+.blog-container h3 {
+	color: #d95c00;
+	text-align: left;
+}
+
+.blog-container p {
+	font-size: 15px;
+	text-align: left;
+}
+
+.blog-container img {
+	padding-right: 80px;
+}
 
 /*
 	==================
@@ -996,12 +1053,12 @@ blockquote {
 
 /*
 	==================
-	[8. TESTOMONIAL]
+	[8. TESTIMONIAL]
 	==================
 */
 #testimoni{
 	width: 100%;
-	background: url(../img/img02.jpg) no-repeat center center transparent;
+	background: url(../img/img03.jpg) no-repeat center center transparent;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale')";
 	background-size:cover !important;
@@ -1038,8 +1095,8 @@ blockquote {
 	line-height: 30px;
 	font-weight: 600;
 	/*text-transform: uppercase */
-	text-align: center;
-	color: #ffffff;
+	text-align: right;
+	color: #d95c00;
 	letter-spacing: -1px;
 	margin: 15px 0;
 }
@@ -1064,6 +1121,14 @@ blockquote {
 	filter: alpha(opacity=80);
 }
 
+#testimoni #testimoni-box {
+	background: rgba(255, 255, 255, 0.30);
+	text-align: right;
+}
+
+#testimoni #testimoni-box p {
+	font-size: 15px;
+}
 
 #testimoni .carousel-control:hover {
 	opacity: 1;
@@ -1081,26 +1146,21 @@ blockquote {
 }
 
 #testimoni .carousel .item{
-	text-shadow: 1px 0px #666;
+	background: rgba(255, 255, 255, 0.3);
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #testimoni .carousel .item .testimoni-item{
-	color: #ffffff;
 	display: block;
-	box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
-	-o-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
-	-moz-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
-	-webkit-box-shadow: inset 0px 1px 1px -1px #ffffff, inset 0px -1px 1px -1px #ffffff;
 	padding: 40px 0;
-	font-size: 14px;
+	font-size: 18px;
+	text-align: left;
 }
 
 #testimoni .carousel .item h4{
-	color: #ffffff;
-	font-weight: 600;
-	font-style: italic;
-	font-size: 15px;
-	text-transform: capitalize;
+	font-size: 18px;
+	text-align: right;
 }
 
 
@@ -2168,7 +2228,7 @@ blockquote {
     -o-transition:-o-transform 0.5s, -o-box-shadow 0.3s;
     transition:transform 0.5s, box-shadow 0.3s;
     margin-bottom: 20px;
-   
+
 }
 
 .pricing-table ul > li{
@@ -2657,9 +2717,9 @@ input {
 
 #slogan {
 	background: rgba(0, 0, 0, 0.5);
-	font-size: 30px; 
-	font-family: Open Sans; 
-	font-weight: 500; 
+	font-size: 30px;
+	font-family: Open Sans;
+	font-weight: 500;
 }
 
 
