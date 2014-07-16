@@ -811,6 +811,7 @@ blockquote {
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 60px;
+	background-color:;
 }
 
 
@@ -1602,7 +1603,7 @@ blockquote {
 .page-content{
 	padding: 0px 0;
 	width: 100%;
-	background: #dadada;
+	background: #FFF;
 }
 
 .page-content h3{
@@ -2314,12 +2315,16 @@ blockquote {
 	==================
 */
 #footer{
-	background: #9E9494;
+	background: #F1C40F;
 	width: 100%;
 	padding: 30px 0;
 	text-align: center;
 	color: #ffffff;
 	float: left;
+}
+
+#footer .row{
+	padding: 0px;
 }
 
 #footer h3{
@@ -2330,12 +2335,16 @@ blockquote {
 	margin-bottom: 20px;
 }
 
+#footer p{
+	font-size: 14px;
+
+}
 #footer .social-icon{
 	display: table;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #footer .social-icon > li{
