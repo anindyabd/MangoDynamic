@@ -2673,3 +2673,13 @@ input {
 .section-subtitle {
 	text-align: left;
 }
+
+#features-tabs{
+	margin:2em 0;
+}
+
+.tab-content{
+	padding-top:2em;
+	padding-bottom:2em;
+	border: 1px solid #ddd;
+}
