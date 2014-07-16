@@ -1,24 +1,27 @@
 <!-- begin:content -->
-<% provide(:title, 'Welcome') %>
+<% provide(:title, 'Campaign Analytics') %>
 <div class="page-content">
 	<div class="container">
 		<div class="row padd20-top-btm">
-			<div>
-				<h2> Hello <%= current_user.email %> </h2>
-				<div class= "row">
-					<div class = "col-md-4 col-sm-6">
-						<%= content_tag :div, "", id: "click_chart", data: {clicks: weibo_data} %>
-					</div>
-					<div class = "col-md-4 col-sm-6">
-						<%= content_tag :div, "", id: "click_chart2", data: {clicks: email_data} %>
-					</div>
-					<div class = "col-md-4 col-sm-6">
-						<%= content_tag :div, "", id: "click_chart3", data: {clicks: weibo_data} %>
-					</div>
+			<h2> Hello <%= current_user.email %> </h2>
+			<div class= "row">
+				<div class = "col-md-4 col-sm-6">
+					<h3> Your Advertisments Click Rate </h3>
+					<%= content_tag :div, "", id: "click_chart", data: {clicks: clickthrough_data} %>
 				</div>
-				
+				<div class = "col-md-4 col-sm-6">
+					<h3> Email Signups </h3>
+					<%= content_tag :div, "", id: "click_chart2", data: {clicks: email_data} %>
+				</div>
+				<div class = "col-md-4 col-sm-6">
+					<h3> Weibo followers </h3>
+					<%= content_tag :div, "", id: "click_chart3", data: {clicks: weibo_data} %>
+				</div>
 			</div>
 		</div>
+		<div class = "row padd20-top-btm">
+			<h3> another graph </h3>
+			<%= content_tag :div, "", id: "pie_chart" %>
 		<div class="row padd20-top-btm">
 			<h3> View Your Past Orders </h3>
 				<% if @orders.any? %>
@@ -43,8 +46,6 @@
 				<% else %>
 					<p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
 			<% end %>
-		</div>
-		<dif class="row">
 		</div>
 	</div>
 </div>
