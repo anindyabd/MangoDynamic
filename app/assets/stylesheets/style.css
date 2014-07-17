@@ -1102,6 +1102,9 @@ blockquote {
 	margin: 15px 0;
 }
 
+#testimoni .col-md-3{
+	width: 35%;
+}
 #testimoni .carousel-control {
 	height: 36px;
 	width: 36px;
@@ -2566,7 +2569,7 @@ position: relative;
 }
 #mc_embed_signup .button {
 	clear:both;
-	background-color: #FFB157;
+	background-color: #F39C11;
 	border: 0 none;
 	border-radius:4px;
 	color: #FFFFFF;

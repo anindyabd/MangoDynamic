@@ -539,6 +539,9 @@ a.text-danger:hover {
 a.bg-primary:hover {
   background-color: #3071a9;
 }
+a.btn a:hover{
+  background: #000;
+}
 .bg-success {
   background-color: #dff0d8;
 }
@@ -1241,7 +1244,7 @@ pre code {
     margin-left: 58.33333333%;
   }
   .col-md-offset-6 {
-    margin-left: 50%;
+    margin-left: 48.5%;
   }
   .col-md-offset-5 {
     margin-left: 41.66666667%;
