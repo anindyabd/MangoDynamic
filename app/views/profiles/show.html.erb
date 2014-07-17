@@ -1,34 +1,55 @@
 <!-- begin:content -->
-<% provide(:title, 'Campaign Analytics') %>
+<% provide(:title, 'Analytics Report') %>
 <div class="page-content">
 	<div class="container">
 		<div class="row padd20-top-btm">
-			<h2> Hello <%= current_user.email %>  </h2>
-			<div class = "row padd20-top-btm">
-				<p>  </p>
-
-			</div>	
-			<div class= "row">
-				<div class = "col-md-4 col-sm-6">
-					<h3> Your Advertisments Click Rate </h3>
-					<%= content_tag :div, "", id: "click_chart", data: {clicks: clickthrough_data} %>
-					<div class = "text-center">
-						<p> Weeks </p>
-					</div>
+			<h2> Order #XXX </h2>
+		</div>
+		<div class = "row padd20-top-btm">
+			<div class = "col-md-6 col-sm-4">
+				<p> <strong>Order: </strong> Premium Package </p>
+				<p> <strong>Week: </strong> Three</p>
+			</div>
+			<div class="col-md-6 col-sm-4">
+				<p><strong>Campaign Launch: </strong> 3/3/2014</p>
+				<p> <strong> View:</strong> Ads, Invoice, Content </p>
+			</div>
+		</div>
+		<div class= "row">
+			<p> You have ... email signups so far!  If you convert an industry average ..., you could get xxx international students! </p>
+		</div>	
+		<div class = "row padd20-top-btm">
+			<div class = "col-md-6 col-sm-4">
+				<p> total advertisment clicks...</p>
+				<p> total page views...</p>
+				<p> Visitors per day...</p>
+			</div>
+			<div class="col-md-6 col-sm-4">
+				<p>Baidu searches...</p>
+				<p>Email signups...</p>
+				<p>Unique ad clicks...</p>
+			</div>
+		</div>	
+		<div class= "row">
+			<div class = "col-md-4 col-sm-6">
+				<h3> Your Advertisments Click Rate </h3>
+				<%= content_tag :div, "", id: "click_chart", data: {clicks: clickthrough_data} %>
+				<div class = "text-center">
+					<p> Weeks </p>
 				</div>
-				<div class = "col-md-4 col-sm-6">
-					<h3> Email Signups </h3>
-					<%= content_tag :div, "", id: "click_chart2", data: {clicks: email_data} %>
-					<div class = "text-center">
-						<p> Weeks </p>
-					</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<h3> Email Signups </h3>
+				<%= content_tag :div, "", id: "click_chart2", data: {clicks: email_data} %>
+				<div class = "text-center">
+					<p> Weeks </p>
 				</div>
-				<div class = "col-md-4 col-sm-6">
-					<h3> Weibo followers </h3>
-					<%= content_tag :div, "", id: "click_chart3", data: {clicks: weibo_data} %>
-					<div class = "text-center">
-						<p> Weeks </p>
-					</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<h3> Weibo followers </h3>
+				<%= content_tag :div, "", id: "click_chart3", data: {clicks: weibo_data} %>
+				<div class = "text-center">
+					<p> Weeks </p>
 				</div>
 			</div>
 		</div>
@@ -57,6 +78,7 @@
 					<p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
 			<% end %>
 		</div>
+
 	</div>
 </div>
 <!-- end:content -->

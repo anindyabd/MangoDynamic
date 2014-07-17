@@ -10,6 +10,7 @@ class AnalyticsByWeeksController < ApplicationController
   # GET /analytics_by_weeks/1
   # GET /analytics_by_weeks/1.json
   def show
+    #change to be those with order id of last order, update order id in create...
     @analytics_by_week = AnalyticsByWeek.find(params[:id])
   end
 
