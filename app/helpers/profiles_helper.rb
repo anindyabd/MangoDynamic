@@ -27,4 +27,12 @@ module ProfilesHelper
 			}
 		end
 	end
+
+	def total_clicks
+		@analytics_by_weeks.sum(:weibo_clicks) + @analytics_by_weeks.sum(:baidu_clicks)
+	end
+
+	def email_signups
+		(@recent_week.email_signups * 0.1).round
+	end
 end

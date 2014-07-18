@@ -2020,7 +2020,7 @@ blockquote {
 	-o-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	background: #F1C40F;
+	background: #F3F3F3;
 	max-width: 200px;
 	margin: 0 auto;
 	position: relative;
@@ -2031,7 +2031,7 @@ blockquote {
 	position: absolute;
 	width: 0;
 	height: 0;
-	border: 15px solid #F1C40F;
+	border: 15px solid #F3F3F3;
 	border-bottom: 0px solid transparent ;
 	border-right: 20px solid transparent;
 	border-left: 20px solid transparent;
@@ -2749,8 +2749,8 @@ input {
 
 #features-tabs{
 	padding-top:2em;
-	margin:2em 0;
-	background-color:rgb(218,218,218);
+	padding-bottom: 2em;
+	background-color: #F3F3F3;
 }
 
 #features-tabs .nav{
@@ -2783,10 +2783,6 @@ input {
 .tab-content{
 	padding-top:2em;
 	padding-bottom:2em;
-<<<<<<< HEAD
-	border: 1px solid #ddd;
-}
-=======
 }
 
 #features-tabs table{
@@ -2800,4 +2796,11 @@ input {
 #features-tabs .glyphicon-remove{
 	color:rgb(242,66,66);
 }
->>>>>>> 74e0b535699d523374a23b0b06229398c3c9982f
+
+.profile h4{
+	color: #D95C00;
+}
+
+.mail-dots p{
+	color: #F3F3F3;
+}

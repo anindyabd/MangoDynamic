@@ -1,41 +1,31 @@
-<h1>Listing orders</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone Number</th>
-      <th>College</th>
-      <th>Street Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zipcode</th>
-      <th>Plan type</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @orders.each do |order| %>
-      <tr>
-        <td><%= order.name %></td>
-        <td><%= order.email %></td>
-        <td><%= order.phone_number %></td>
-        <td><%= order.college_name %></td>
-        <td><%= order.address %></td>
-        <td><%= order.city %></td>
-        <td><%= order.state %></td>
-        <td><%= order.zip_code %></td>
-        <td><%= order.plan_type %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Order', new_order_path %>
+<% provide(:title, 'Orders') %>
+<div class="page-content">
+  <div class="container">
+    <div class="row padd20-top-btm">
+      <h3> View Your Past Orders </h3>
+        <% if @orders.any? %>
+          <table> 
+            <thead>
+              <tr>
+                <th> Date Purchased </th>
+                <th> Name On Order </th>
+                <th> Email On Order </th>
+                <th> Order Amount </th>
+              </tr>
+            </thead>
+            <% @orders.each do |o| %>
+              <tr>
+                <td> <%= o.created_at.strftime("%d %b %y")  %> </td>
+                <td> <%= o.name %> </td>
+                <td> <%= o.email %> </td>
+                <td> <%= number_to_currency(o.total_price) %> </td>
+                <td> add invoice view </td>
+              </tr>
+          <% end %>
+        </table>
+        <% else %>
+          <p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
+      <% end %>
+    </div>
+  </div>
+</div>

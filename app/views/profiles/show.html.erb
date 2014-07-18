@@ -1,33 +1,42 @@
 <!-- begin:content -->
-<% provide(:title, 'Analytics Report') %>
+<% provide(:title, 'Report') %>
 <div class="page-content">
 	<div class="container">
 		<div class="row padd20-top-btm">
-			<h2> Order #XXX </h2>
+			<h2 class="profile"> Order: #<%= @last_order.id %> </h2>
 		</div>
-		<div class = "row padd20-top-btm">
+		<div class = "row ">
 			<div class = "col-md-6 col-sm-4">
-				<p> <strong>Order: </strong> Premium Package </p>
+				<p> <strong>Order: </strong> 
+					<% @last_order_items.each do |items| %>
+						<%= items.product.title %>
+					<% end %>
 				<p> <strong>Week: </strong> Three</p>
 			</div>
 			<div class="col-md-6 col-sm-4">
-				<p><strong>Campaign Launch: </strong> 3/3/2014</p>
+				<p><strong>Campaign Launch: </strong> <%= @last_order.created_at.strftime("%m/%d/%Y") %> </p>
 				<p> <strong> View:</strong> Ads, Invoice, Content </p>
 			</div>
 		</div>
-		<div class= "row">
-			<p> You have ... email signups so far!  If you convert an industry average ..., you could get xxx international students! </p>
+		<div class= "row profile">
+			<h4> <strong> So far you have <%= @recent_week.email_signups %> email signups!  If you convert an industry average 1 %, you will recieve <%= email_signups %> additional international
+				<% if @recent_week.email_signups * 0.1 <= 1 %>
+					student!
+					<% else %> 
+					students! 
+				<% end %>
+			</strong></h4>
 		</div>	
 		<div class = "row padd20-top-btm">
 			<div class = "col-md-6 col-sm-4">
-				<p> total advertisment clicks...</p>
-				<p> total page views...</p>
-				<p> Visitors per day...</p>
+				<p> Total Advertisment Clicks... <%= total_clicks %></p>
+				<p> Total Page Views... Add Column </p>
+				<p> Visitors Per Day... Add Column</p>
 			</div>
 			<div class="col-md-6 col-sm-4">
-				<p>Baidu searches...</p>
-				<p>Email signups...</p>
-				<p>Unique ad clicks...</p>
+				<p>Baidu Searches... Add Column</p>
+				<p>Email Signups... <%= email_signups %></p>
+				<p>Unique ad clicks... Add Column </p>
 			</div>
 		</div>	
 		<div class= "row">
@@ -52,30 +61,6 @@
 					<p> Weeks </p>
 				</div>
 			</div>
-		<div class="row padd20-top-btm">
-			<h3> View Your Past Orders </h3>
-				<% if @orders.any? %>
-					<table> 
-						<thead>
-							<tr>
-								<th> Date Purchased </th>
-								<th> Name On Order </th>
-								<th> Email On Order </th>
-								<th> Order Amount </th>
-							</tr>
-						</thead>
-						<% @orders.each do |o| %>
-							<tr>
-								<td> <%= o.created_at.strftime("%d %b %y")  %> </td>
-								<td> <%= o.name %> </td>
-								<td> <%= o.email %> </td>
-								<td> <%= number_to_currency(o.total_price) %> </td>
-							</tr>
-					<% end %>
-				</table>
-				<% else %>
-					<p>You haven't made any purchases! Click <%= link_to "here", store_path %> to view our store</p>
-			<% end %>
 		</div>
 	</div>
 </div>
