@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-
+skip_before_filter :validate_user, :only => [:new, :create]
 	def new
 		@contact = Contact.new
 	end

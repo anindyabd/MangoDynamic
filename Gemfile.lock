@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/gregbell/active_admin.git
+  revision: 27360996837146ebbbf3b3597049b1586542fbeb
+  specs:
+    activeadmin (1.0.0.pre)
+      arbre (~> 1.0)
+      bourbon
+      coffee-rails
+      formtastic (~> 2.3.0.rc3)
+      inherited_resources (~> 1.4.1)
+      jquery-rails
+      jquery-ui-rails (~> 5.0)
+      kaminari (~> 0.15)
+      rails (>= 3.2, < 4.2)
+      ransack (~> 1.0)
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +47,8 @@ GEM
     annotate (2.6.5)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
+    arbre (1.0.1)
+      activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     bcrypt-ruby (3.1.5)
@@ -39,6 +58,9 @@ GEM
       erubis (>= 2.6.6)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
     builder (3.2.2)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -82,6 +104,8 @@ GEM
       dotenv (~> 0.11.1)
       thor (~> 0.19.1)
     formatador (0.2.5)
+    formtastic (2.3.0.rc3)
+      actionpack (>= 3.0)
     growl (1.0.3)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -96,8 +120,14 @@ GEM
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
+    has_scope (0.6.0.rc)
+      actionpack (>= 3.2, < 5)
+      activesupport (>= 3.2, < 5)
     hike (1.2.3)
     i18n (0.6.9)
+    inherited_resources (1.4.1)
+      has_scope (~> 0.6.0.rc)
+      responders (~> 1.0.0.rc)
     jbuilder (2.1.0)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -107,7 +137,12 @@ GEM
     jquery-turbolinks (2.0.2)
       railties (>= 3.1.0)
       turbolinks
+    jquery-ui-rails (5.0.0)
+      railties (>= 3.2.16)
     json (1.8.1)
+    kaminari (0.16.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     kgio (2.9.2)
     libv8 (3.16.14.3)
     listen (2.7.7)
@@ -133,6 +168,8 @@ GEM
     orm_adapter (0.5.0)
     pdf-core (0.2.5)
     pg (0.15.1)
+    polyamorous (1.0.0)
+      activerecord (>= 3.0)
     polyglot (0.3.5)
     prawn (1.0.0)
       pdf-core (~> 0.2.2)
@@ -166,6 +203,12 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.3.2)
+    ransack (1.2.3)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.0.0)
     raphael-rails (2.1.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
@@ -173,6 +216,8 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    responders (1.0.0)
+      railties (>= 3.2, < 5)
     rspec (2.99.0)
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
@@ -268,6 +313,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activeadmin!
   annotate (~> 2.6.5)
   bcrypt-ruby (= 3.1.5)
   better_errors

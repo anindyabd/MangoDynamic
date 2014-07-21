@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
 
   before_filter :authenticate_user!
+  before_filter :validate_user
 
   # GET /profiles
   # GET /profiles.json
@@ -61,6 +62,16 @@ class ProfilesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
       params.require(:profile).permit(:user_id)
+    end
+
+    def validate_user
+      if current_user.id == Profile.find(params[:id]).user_id
+        #allow
+      else
+        #block
+         flash[:error] = "You must login to continue"
+         redirect_to(root_url)
+      end
     end
 
 end

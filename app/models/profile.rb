@@ -6,4 +6,6 @@ class Profile < ActiveRecord::Base
   def feed
   	AnalyticsByWeek.where("profile_id = ?", id)
   end
+
+  
 end

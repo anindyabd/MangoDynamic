@@ -61,8 +61,7 @@ gem 'prawn', '~> 1.0.0'
 #graphs for the analytics dashboard
 gem 'morrisjs-rails'
 gem 'raphael-rails'
-#gem 'activeadmin', '~> 0.6.3'
-
+gem 'activeadmin', github: 'gregbell/active_admin'
 #gem for social share buttons
 gem 'social-share-button'
 group :production do
