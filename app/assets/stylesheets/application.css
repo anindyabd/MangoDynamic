@@ -13,7 +13,7 @@
  *= require_self
  *= require responsive
  *= require morris
-  *= require bootstrap-theme
+ *= require bootstrap-theme
  *= require bootstrap
  *= require style
  *= require simple-form
