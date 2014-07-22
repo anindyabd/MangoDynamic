@@ -1,4 +1,4 @@
 ActiveAdmin.register Post do
-  permit_params :Title, :Content
+  permit_params :title, :content
   
 end
