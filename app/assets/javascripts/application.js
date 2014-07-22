@@ -10,12 +10,15 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap
+
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require raphael
 //= require morris
-//= require_tree .
+//= require html5shiv
+//= require profiles
+//= require script
 //= require social-share-button
