@@ -12,14 +12,18 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
+    @user = current_user 
+    pdf = InvoicePdf.new(@order, view_context)
+    @attachment = pdf.render 
+    UserMailer.checkout_email(@user, @attachment).deliver
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = InvoicePdf.new(@order, view_context)
         send_data pdf.render, filename: "invoice_#{@order.created_at.strftime("%d/%m/%Y")}.pdf", 
                               type: "application/pdf", disposition: 'inline'
       end
     end
+    
   end
 
   # GET /orders/new
