@@ -13,11 +13,11 @@
  *= require_self
  *= require responsive
  *= require morris
+ *= require scaffolds
  *= require bootstrap-theme
  *= require bootstrap
  *= require style
  *= require simple-form
- *= require scaffolds
  *= require font-awesome
  *= require animate
  */

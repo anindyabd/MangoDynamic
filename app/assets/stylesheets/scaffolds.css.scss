@@ -11,7 +11,10 @@ a {
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #F39C12;
+  }
+  &:link {
+    text-decoration: none;
   }
 }
 
