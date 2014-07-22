@@ -16,9 +16,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require script
 //= require raphael
 //= require morris
 //= require html5shiv
 //= require profiles
-//= require script
 //= require social-share-button

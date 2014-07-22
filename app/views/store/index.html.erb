@@ -13,6 +13,7 @@
 						<p> Don't worry checkout functionality is coming soon! </p>
 					</div>
 					</ul>
+					<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true, class: "btn btn-warning addCartButton" %>
 				</div>
 			<% end %>			
 		</div>
