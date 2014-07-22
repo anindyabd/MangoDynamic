@@ -7,7 +7,7 @@ class UserMailer < ActionMailer::Base
       mime_type: 'application/pdf',
       content: attachment
     }
-    mail(to: @user.email, subject: 'Your order is complete!')
+    mail(to: @user.email, bcc: ["eric@consultmango.com", "kevin@consultmango.com"], subject: 'Your order is complete!')
   end
 
 end
