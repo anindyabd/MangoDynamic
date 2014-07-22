@@ -31,7 +31,7 @@
 		                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 		                <div style="position: absolute; left: -5000px;"><input type="text" name="b_1754f04ee3254a4d9895464bc_6e42c28d90" tabindex="-1" value=""></div>
 		                <div class="clear">
-		                  <input type="submit" value="Subscribe" name="subscribe" id="footer-subscribe">
+		                  <input type="submit" value="Subscribe" name="subscribe" id="footer-subscribe" class = "button btn btn-warning"> 
 		                </div>
 		            </div>
 	                </form>
@@ -39,9 +39,11 @@
 	            </div>
                 <div class="row">
 	                <h3> Recent Posts </h3>
-	                <ul>
-	                	<li> Post 1 </li>
-	                	<li> Post 2 </li>
+
+	                <ul class="list-unstyled">
+	                	<% @recent_posts.each do |post| %>
+	                	<li> <%= link_to post.title, post %> </li>
+	                	<% end %>
 	                </ul>
 	            </div>   
 			</div>

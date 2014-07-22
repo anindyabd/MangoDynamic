@@ -37,7 +37,7 @@
   	
     <%= yield %>
   	
-  	<%= render "layouts/footer" %>
+  	<%= render "layouts/footer", :locals => { :recent_posts => @recent_posts } %>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

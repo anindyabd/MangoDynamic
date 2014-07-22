@@ -2510,8 +2510,9 @@ blockquote {
 #footer #footer-subscribe {
 	color: white;
 	font-weight: 600;
-	background-color: #D95C00;
+	/*background-color: #D95C00;*/
 	border-style: none;
+	margin-top: 10px;
 
 }
 

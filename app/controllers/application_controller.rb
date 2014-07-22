@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  #before_filter :validate_user
+  before_filter :get_recent_posts
 
   def current_cart
   	Cart.find(session[:cart_id])
@@ -21,4 +21,9 @@ class ApplicationController < ActionController::Base
       redirect_to(:back)
     end
   end
+
+  def get_recent_posts
+    @recent_posts = Post.limit(3)
+  end
+
 end
