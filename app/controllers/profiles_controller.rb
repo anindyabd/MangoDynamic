@@ -18,7 +18,11 @@ class ProfilesController < ApplicationController
     @recent_week = @analytics_by_weeks.last
     @orders = current_user.orders.limit(5)
     @last_order = current_user.orders.last
-    @last_order_items = @last_order.line_items.all
+    if @last_order.blank?
+      #do nothing
+    else
+      @last_order_items = @last_order.line_items.all
+    end
 
   end
 
@@ -56,7 +60,7 @@ class ProfilesController < ApplicationController
 
   private
    def set_profile
-      @profile = Product.find(params[:id])
+      @profile = Profile.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

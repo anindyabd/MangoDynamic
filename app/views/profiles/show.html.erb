@@ -2,9 +2,11 @@
 <% provide(:title, 'Report') %>
 <div class="page-content">
 	<div class="container">
-
 		<% if @orders.blank? %>
-			<p> you must place an order to show analytics for it. </p>
+			<div class = "row padd20-top-btm">
+				<h2> You have yet to place an order!</h2>
+				<p>In order to view your custom analytics you must place an order.  Visit the <%= link_to "store", store_path %> to make a purchase today. </p>
+			</div>
 			<% else %>
 		<div class="row padd20-top-btm">
 			<h2 class="profile"> Order: #<%= @last_order.id %> </h2>
@@ -23,7 +25,7 @@
 			</div>
 		</div>
 		<div class= "row profile">
-			<h4> <strong> So far you have <%= @recent_week.email_signups %> email signups!  If you convert an industry average 1 %, you will recieve <%= email_signups %> additional international
+			<h4> <strong> So far you have <%= @recent_week.email_signups %> email signups!  If you convert an industry average 1 %, you will receive <%= email_signups %> additional international
 				<% if @recent_week.email_signups * 0.1 <= 1 %>
 					student!
 					<% else %> 

@@ -71,7 +71,6 @@ class InvoicePdf < Prawn::Document
 	 				pad_top(5){ text "0%", :align => :left }
 	 			elsif @order.plan_type == "Six Months"
 	 				text "1.95%"
-	 				total_
 	 			else
 	 				text "2.97%"
 	 			end
