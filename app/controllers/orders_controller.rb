@@ -19,7 +19,9 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
-    @order = Order.find(params[:id])
+    @order = current_user.orders.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      redirect_to root_url and return  
     respond_to do |format|
       format.html
       format.pdf do
