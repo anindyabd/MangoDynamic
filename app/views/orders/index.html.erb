@@ -19,7 +19,7 @@
                 <td> <%= o.name %> </td>
                 <td> <%= o.email %> </td>
                 <td> <%= number_to_currency(o.total_price) %> </td>
-                <td> add invoice view </td>
+                <td> <%= link_to 'View Invoice', order_path(o, :format => 'pdf') %> </td>
               </tr>
           <% end %>
         </table>
